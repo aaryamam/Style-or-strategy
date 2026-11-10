@@ -1,4 +1,4 @@
-# Style or Strategy?: Discriminating Post-Training Displacement from Its Confounds in LLM Price Negotiation
+# Style or Strategy? Discriminating Post-Training Displacement from Its Confounds in LLM Price Negotiation
 
 Official code, interaction logs, analysis suite, and reproduction artifacts for:
 
