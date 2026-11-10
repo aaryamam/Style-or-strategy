@@ -1,0 +1,978 @@
+{
+ "early": [
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 30 and your current ask is 76.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 86; the buyer's standing offer is 60 and your current ask is 82.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 62 and your current ask is 81.",
+   "eff_room": 27,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 45 and your current ask is 83.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 60 and your current ask is 74.",
+   "eff_room": 29,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 44 and your current ask is 84.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 10 and your current ask is 76.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 56 and your current ask is 73.",
+   "eff_room": 21,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 85; the buyer's standing offer is 55 and your current ask is 81.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 49 and your current ask is 73.",
+   "eff_room": 16,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 10 and your current ask is 80.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 41 and your current ask is 73.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 60 and your current ask is 81.",
+   "eff_room": 20,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 35 and your current ask is 75.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 55 and your current ask is 80.",
+   "eff_room": 15,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 86; the buyer's standing offer is 30 and your current ask is 82.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 64 and your current ask is 84.",
+   "eff_room": 18,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 44 and your current ask is 77.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 21 and your current ask is 82.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 65 and your current ask is 82.",
+   "eff_room": 15,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 65 and your current ask is 78.",
+   "eff_room": 17,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 63 and your current ask is 76.",
+   "eff_room": 31,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 65 and your current ask is 84.",
+   "eff_room": 17,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 85; the buyer's standing offer is 58 and your current ask is 81.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 59 and your current ask is 79.",
+   "eff_room": 17,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 57 and your current ask is 80.",
+   "eff_room": 18,
+   "round": 2,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 26 and your current ask is 77.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 20 and your current ask is 78.",
+   "eff_room": 28,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 53 and your current ask is 76.",
+   "eff_room": 20,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 86; the buyer's standing offer is 70 and your current ask is 82.",
+   "eff_room": 19,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 40 and your current ask is 81.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 53 and your current ask is 73.",
+   "eff_room": 15,
+   "round": 2,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 55 and your current ask is 79.",
+   "eff_room": 22,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 60 and your current ask is 82.",
+   "eff_room": 21,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 30 and your current ask is 84.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 86; the buyer's standing offer is 51 and your current ask is 86.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 42 and your current ask is 80.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 46 and your current ask is 84.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 41 and your current ask is 78.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 30 and your current ask is 77.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 38 and your current ask is 80.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 35 and your current ask is 79.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You are asking 81. No counter-offer is on the table yet.",
+   "eff_room": 0,
+   "round": 1,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 50 and your current ask is 73.",
+   "eff_room": 27,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 31 and your current ask is 80.",
+   "eff_room": 17,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 43 and your current ask is 82.",
+   "eff_room": 15,
+   "round": 2,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 35 and your current ask is 74.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 42 and your current ask is 77.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 38 and your current ask is 77.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 65 and your current ask is 77.",
+   "eff_room": 29,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 45 and your current ask is 80.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 50 and your current ask is 81.",
+   "eff_room": 17,
+   "round": 2,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 20 and your current ask is 79.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 10 and your current ask is 84.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You are asking 79. No counter-offer is on the table yet.",
+   "eff_room": 0,
+   "round": 1,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 65 and your current ask is 83.",
+   "eff_room": 22,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 86; the buyer's standing offer is 17 and your current ask is 86.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 12 and your current ask is 75.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 85; the buyer's standing offer is 47 and your current ask is 81.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 85; the buyer's standing offer is 60 and your current ask is 81.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 49 and your current ask is 84.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 55 and your current ask is 73.",
+   "eff_room": 19,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 35 and your current ask is 73.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 38 and your current ask is 79.",
+   "eff_room": 19,
+   "round": 2,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 45 and your current ask is 75.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 60 and your current ask is 78.",
+   "eff_room": 21,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 68 and your current ask is 80.",
+   "eff_room": 31,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 85; the buyer's standing offer is 59 and your current ask is 81.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 40 and your current ask is 78.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 55 and your current ask is 81.",
+   "eff_room": 15,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 25 and your current ask is 76.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 86; the buyer's standing offer is 53 and your current ask is 82.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 35 and your current ask is 78.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 46 and your current ask is 77.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 20 and your current ask is 82.",
+   "eff_room": 20,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 41 and your current ask is 75.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 82; the buyer's standing offer is 20 and your current ask is 77.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 45 and your current ask is 79.",
+   "eff_room": 29,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 81; the buyer's standing offer is 12 and your current ask is 81.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 86; the buyer's standing offer is 49 and your current ask is 82.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 35 and your current ask is 80.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 83; the buyer's standing offer is 49 and your current ask is 78.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 42 and your current ask is 80.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 30 and your current ask is 79.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 40 and your current ask is 75.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_instruct"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 10 and your current ask is 79.",
+   "eff_room": 20,
+   "round": 2,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 79; the buyer's standing offer is 28 and your current ask is 79.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 80; the buyer's standing offer is 42 and your current ask is 75.",
+   "eff_room": 0,
+   "round": 2,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You are asking 82. No counter-offer is on the table yet.",
+   "eff_room": 23,
+   "round": 1,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is the opening of a price negotiation. You opened by asking 84; the buyer's standing offer is 60 and your current ask is 84.",
+   "eff_room": 18,
+   "round": 2,
+   "src": "passA_instruct"
+  }
+ ],
+ "late": [
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 83; through the exchanges the buyer's standing offer is now 60 and your current ask is 74.",
+   "eff_room": 31,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 7 rounds. You opened at 85; the buyer has pushed you down over several exchanges to a standing offer of 50, and your current ask is 75. The amount at stake is large.",
+   "eff_room": 29,
+   "round": 8,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 85; the buyer has pushed you down over several exchanges to a standing offer of 50, and your current ask is 78. The amount at stake is large.",
+   "eff_room": 29,
+   "round": 7,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 85; the buyer has pushed you down over several exchanges to a standing offer of 50, and your current ask is 78. The amount at stake is large.",
+   "eff_room": 29,
+   "round": 6,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 85; through the exchanges the buyer's standing offer is now 50 and your current ask is 78.",
+   "eff_room": 29,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 30 and your current ask is 74.",
+   "eff_room": 29,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 60, and your current ask is 73. The amount at stake is large.",
+   "eff_room": 25,
+   "round": 6,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 55 and your current ask is 75.",
+   "eff_room": 25,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 60 and your current ask is 80.",
+   "eff_room": 25,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 7 rounds. You opened at 83; the buyer has pushed you down over several exchanges to a standing offer of 60, and your current ask is 83. The amount at stake is large.",
+   "eff_room": 24,
+   "round": 8,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 7 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 8, and your current ask is 77. The amount at stake is large.",
+   "eff_room": 24,
+   "round": 8,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 83; the buyer has pushed you down over several exchanges to a standing offer of 60, and your current ask is 83. The amount at stake is large.",
+   "eff_room": 24,
+   "round": 7,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 8, and your current ask is 77. The amount at stake is large.",
+   "eff_room": 24,
+   "round": 7,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 83; the buyer has pushed you down over several exchanges to a standing offer of 60, and your current ask is 83. The amount at stake is large.",
+   "eff_room": 24,
+   "round": 6,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 8, and your current ask is 77. The amount at stake is large.",
+   "eff_room": 24,
+   "round": 6,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 83; through the exchanges the buyer's standing offer is now 60 and your current ask is 83.",
+   "eff_room": 24,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 82; through the exchanges the buyer's standing offer is now 8 and your current ask is 77.",
+   "eff_room": 24,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 81; through the exchanges the buyer's standing offer is now 41 and your current ask is 76.",
+   "eff_room": 23,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 7 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 0, and your current ask is 82. The amount at stake is large.",
+   "eff_room": 22,
+   "round": 8,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 0, and your current ask is 82. The amount at stake is large.",
+   "eff_room": 22,
+   "round": 7,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 0, and your current ask is 82. The amount at stake is large.",
+   "eff_room": 22,
+   "round": 6,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 82; through the exchanges the buyer's standing offer is now 0 and your current ask is 82.",
+   "eff_room": 22,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 81; through the exchanges the buyer's standing offer is now 60 and your current ask is 76.",
+   "eff_room": 22,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 79; through the exchanges the buyer's standing offer is now 40 and your current ask is 68.",
+   "eff_room": 21,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 79; through the exchanges the buyer's standing offer is now 50 and your current ask is 64.",
+   "eff_room": 21,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 80; the buyer has pushed you down over several exchanges to a standing offer of 60, and your current ask is 75. The amount at stake is large.",
+   "eff_room": 20,
+   "round": 6,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 84; the buyer has pushed you down over several exchanges to a standing offer of 66, and your current ask is 76. The amount at stake is large.",
+   "eff_room": 20,
+   "round": 6,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 82; through the exchanges the buyer's standing offer is now 30 and your current ask is 77.",
+   "eff_room": 20,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 60 and your current ask is 75.",
+   "eff_room": 20,
+   "round": 5,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 84; through the exchanges the buyer's standing offer is now 66 and your current ask is 76.",
+   "eff_room": 20,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 79; the buyer has pushed you down over several exchanges to a standing offer of 30, and your current ask is 64. The amount at stake is large.",
+   "eff_room": 19,
+   "round": 6,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 82; through the exchanges the buyer's standing offer is now 15 and your current ask is 77.",
+   "eff_room": 19,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 57 and your current ask is 69.",
+   "eff_room": 19,
+   "round": 5,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 83; through the exchanges the buyer's standing offer is now 65 and your current ask is 83.",
+   "eff_room": 19,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 60, and your current ask is 82. The amount at stake is large.",
+   "eff_room": 18,
+   "round": 6,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 55 and your current ask is 69.",
+   "eff_room": 18,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 82; through the exchanges the buyer's standing offer is now 60 and your current ask is 82.",
+   "eff_room": 18,
+   "round": 5,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 79; through the exchanges the buyer's standing offer is now 40 and your current ask is 64.",
+   "eff_room": 18,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 86; the buyer has pushed you down over several exchanges to a standing offer of 70, and your current ask is 79. The amount at stake is large.",
+   "eff_room": 17,
+   "round": 7,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 80; the buyer has pushed you down over several exchanges to a standing offer of 55, and your current ask is 75. The amount at stake is large.",
+   "eff_room": 17,
+   "round": 7,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 86; the buyer has pushed you down over several exchanges to a standing offer of 60, and your current ask is 82. The amount at stake is large.",
+   "eff_room": 17,
+   "round": 6,
+   "src": "passA_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 80; the buyer has pushed you down over several exchanges to a standing offer of 55, and your current ask is 75. The amount at stake is large.",
+   "eff_room": 17,
+   "round": 6,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 86; through the exchanges the buyer's standing offer is now 60 and your current ask is 82.",
+   "eff_room": 17,
+   "round": 5,
+   "src": "passA_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 83; through the exchanges the buyer's standing offer is now 67 and your current ask is 83.",
+   "eff_room": 17,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 79; through the exchanges the buyer's standing offer is now 33 and your current ask is 73.",
+   "eff_room": 17,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 55 and your current ask is 74.",
+   "eff_room": 17,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 83; through the exchanges the buyer's standing offer is now 60 and your current ask is 71.",
+   "eff_room": 17,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 7 rounds. You opened at 86; the buyer has pushed you down over several exchanges to a standing offer of 70, and your current ask is 82. The amount at stake is large.",
+   "eff_room": 16,
+   "round": 8,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 79; the buyer has pushed you down over several exchanges to a standing offer of 37, and your current ask is 68. The amount at stake is large.",
+   "eff_room": 16,
+   "round": 7,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 86; the buyer has pushed you down over several exchanges to a standing offer of 70, and your current ask is 82. The amount at stake is large.",
+   "eff_room": 16,
+   "round": 7,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 79; the buyer has pushed you down over several exchanges to a standing offer of 37, and your current ask is 68. The amount at stake is large.",
+   "eff_room": 16,
+   "round": 6,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 86; the buyer has pushed you down over several exchanges to a standing offer of 70, and your current ask is 82. The amount at stake is large.",
+   "eff_room": 16,
+   "round": 6,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 79; through the exchanges the buyer's standing offer is now 37 and your current ask is 68.",
+   "eff_room": 16,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 86; through the exchanges the buyer's standing offer is now None and your current ask is 86.",
+   "eff_room": 16,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 81; through the exchanges the buyer's standing offer is now 55 and your current ask is 76.",
+   "eff_room": 16,
+   "round": 5,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 7 rounds. You opened at 84; the buyer has pushed you down over several exchanges to a standing offer of 55, and your current ask is 76. The amount at stake is large.",
+   "eff_room": 15,
+   "round": 8,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 7 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 55, and your current ask is 66. The amount at stake is large.",
+   "eff_room": 15,
+   "round": 8,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 84; the buyer has pushed you down over several exchanges to a standing offer of 55, and your current ask is 76. The amount at stake is large.",
+   "eff_room": 15,
+   "round": 7,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 6 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 50, and your current ask is 66. The amount at stake is large.",
+   "eff_room": 15,
+   "round": 7,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 84; the buyer has pushed you down over several exchanges to a standing offer of 61, and your current ask is 80. The amount at stake is large.",
+   "eff_room": 15,
+   "round": 6,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 84; the buyer has pushed you down over several exchanges to a standing offer of 65, and your current ask is 73. The amount at stake is large.",
+   "eff_room": 15,
+   "round": 6,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 80; the buyer has pushed you down over several exchanges to a standing offer of 50, and your current ask is 60. The amount at stake is large.",
+   "eff_room": 15,
+   "round": 6,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "This is a late, high-stakes stage of a price negotiation, after 5 rounds. You opened at 82; the buyer has pushed you down over several exchanges to a standing offer of 45, and your current ask is 69. The amount at stake is large.",
+   "eff_room": 15,
+   "round": 6,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 84; through the exchanges the buyer's standing offer is now 61 and your current ask is 80.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 84; through the exchanges the buyer's standing offer is now 60 and your current ask is 80.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 50 and your current ask is 70.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_z_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 79; through the exchanges the buyer's standing offer is now 50 and your current ask is 68.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_z_dpo"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 82; through the exchanges the buyer's standing offer is now 61 and your current ask is 77.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 85; through the exchanges the buyer's standing offer is now 63 and your current ask is 77.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_t_base"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 84; through the exchanges the buyer's standing offer is now 35 and your current ask is 76.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 80; through the exchanges the buyer's standing offer is now 35 and your current ask is 63.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  },
+  {
+   "history": "The negotiation is underway, 4 rounds in. You opened at 82; through the exchanges the buyer's standing offer is now 40 and your current ask is 69.",
+   "eff_room": 15,
+   "round": 5,
+   "src": "passA_t_rlvr"
+  }
+ ]
+}

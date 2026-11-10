@@ -1,0 +1,22 @@
+{
+ "_note": "Strategy-vs-style seller experiment. Gate: optimal opening alpha B=0.05<A=0.45<C=0.75 (diverge, spread 0.70). 6 ckpts x 4 sellers x N=500 constrained.",
+ "gate_optimal_alpha": {
+  "A": 0.45,
+  "B": 0.05,
+  "C": 0.75
+ },
+ "test1_opening_tracking": {
+  "all_models": "STYLE-LEANING",
+  "opening_spread_across_ABC_per_model": "<=0.007 (vs optimal spread 0.70)",
+  "slopes_CI_span_0": true,
+  "posttraining_increases_tracking": false
+ },
+ "test2_surplus": {
+  "order_B_gt_A_gt_C": "True for all (mechanical: fixed buyer x seller generosity, not adaptation)"
+ },
+ "test3_adaptive_D": {
+  "Dfam_vs_D_approx_equals_vs_A": true,
+  "direction_flips_survive_ABCD": true
+ },
+ "verdict": "STYLE-DOMINATED. Behavior does not track seller optima; displacement is fixed per-checkpoint style. \"strategic\" NOT earned -> retitle to behavioral-signature displacement. Direction-heterogeneity IS seller-invariant (robustness), but it is stylistic heterogeneity."
+}

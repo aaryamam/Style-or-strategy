@@ -1,0 +1,160 @@
+{
+ "fingerprint": "b8a3fe644566eec241be1525cebc363c60f87e020a291e08a21350a80a164c58",
+ "n_pass": 19,
+ "n_total": 19,
+ "all_pass": true,
+ "gates": [
+  {
+   "gate": "T3.OLMo",
+   "got": 0.792349240718198,
+   "target": 0.792,
+   "tol": 0.001,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T3.Zephyr",
+   "got": 0.3527084811133641,
+   "target": 0.353,
+   "tol": 0.001,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T3.Tulu",
+   "got": 0.8013268156995512,
+   "target": 0.801,
+   "tol": 0.001,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T3.Tulu_sellerA",
+   "got": 0.8006578759723869,
+   "target": 0.8007,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T7.OLMo.base->sft",
+   "got": 1.1102498581128306,
+   "target": 1.11,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T7.OLMo.sft->dpo",
+   "got": 0.7011798983803376,
+   "target": 0.701,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T7.OLMo.dpo->instruct",
+   "got": 0.09649068610656167,
+   "target": 0.096,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T7.Zephyr.z_base->z_sft",
+   "got": 0.41835332535710457,
+   "target": 0.418,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T7.Zephyr.z_sft->z_dpo",
+   "got": 0.5860146452806262,
+   "target": 0.586,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T7.Tulu.t_base->t_sft",
+   "got": 0.8191784923696329,
+   "target": 0.819,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T7.Tulu.t_sft->t_dpo",
+   "got": 1.32767477083339,
+   "target": 1.328,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T7.Tulu.t_dpo->t_rlvr",
+   "got": 0.1604443002357156,
+   "target": 0.16,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T2.olmo_base.override",
+   "got": 0.2082514734774067,
+   "target": 0.208,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T2.olmo_base.rescue",
+   "got": 0.1778115501519757,
+   "target": 0.178,
+   "tol": 0.002,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "T4.z_base.opa.CmB",
+   "got": 0.8366099318796556,
+   "target": 0.837,
+   "tol": 0.01,
+   "pass": true,
+   "extra": "(CI depends on RNG order; point gated)"
+  },
+  {
+   "gate": "T6.base.opa.excl_ovr",
+   "got": 0.17538920402564592,
+   "target": 0.1754,
+   "tol": 0.003,
+   "pass": true,
+   "extra": ""
+  },
+  {
+   "gate": "gate.alpha_surplus.A",
+   "got": 11.714285714285714,
+   "target": 11.71,
+   "tol": 0.05,
+   "pass": true,
+   "extra": "alpha*=0.45"
+  },
+  {
+   "gate": "gate.alpha_surplus.B",
+   "got": 22.179802955665025,
+   "target": 22.18,
+   "tol": 0.05,
+   "pass": true,
+   "extra": "alpha*=0.05"
+  },
+  {
+   "gate": "gate.alpha_surplus.C",
+   "got": 2.4729064039408866,
+   "target": 2.47,
+   "tol": 0.05,
+   "pass": true,
+   "extra": "alpha*=0.75"
+  }
+ ]
+}

@@ -1,0 +1,171 @@
+{
+ "_note": "AXIS-1 firing test. eta=signed q_F(agg)-q_F(pass); FIRES iff D\u03b7=eta_late-eta_early < 0 with CI upper<0 (gap widens into high-stakes). Source rows: format_probe/out/probe_runs_zephyr_tulu.jsonl (Zephyr/Tulu) + probe_runs.jsonl (OLMo).",
+ "buckets": {
+  "aggressive": [
+   "hold_justified",
+   "offer_conditional"
+  ],
+  "passive": [
+   "accept",
+   "offer_simple"
+  ]
+ },
+ "checkpoints": {
+  "z_base": {
+   "marg_eta": -0.25,
+   "eta": {
+    "early_low": -0.21,
+    "mid": -0.363,
+    "late_high": -0.177
+   },
+   "delta": 0.033,
+   "delta_ci": [
+    -0.037,
+    0.103
+   ],
+   "verdict": "PARTIAL-flat"
+  },
+  "z_dpo": {
+   "marg_eta": -0.446,
+   "eta": {
+    "early_low": -0.45,
+    "mid": -0.427,
+    "late_high": -0.46
+   },
+   "delta": -0.01,
+   "delta_ci": [
+    -0.097,
+    0.077
+   ],
+   "verdict": "PARTIAL-flat"
+  },
+  "t_base": {
+   "marg_eta": -0.511,
+   "eta": {
+    "early_low": -0.493,
+    "mid": -0.547,
+    "late_high": -0.493
+   },
+   "delta": 0.0,
+   "delta_ci": [
+    -0.083,
+    0.08
+   ],
+   "verdict": "PARTIAL-flat"
+  },
+  "t_rlvr": {
+   "marg_eta": -0.36,
+   "eta": {
+    "early_low": -0.5,
+    "mid": -0.08,
+    "late_high": -0.5
+   },
+   "delta": 0.0,
+   "delta_ci": [
+    -0.08,
+    0.08
+   ],
+   "verdict": "PARTIAL-flat"
+  },
+  "olmo_base": {
+   "marg_eta": -0.497,
+   "eta": {
+    "early_low": -0.47,
+    "mid": -0.533,
+    "late_high": -0.487
+   },
+   "delta": -0.017,
+   "delta_ci": [
+    -0.11,
+    0.077
+   ],
+   "verdict": "PARTIAL-flat"
+  },
+  "olmo_inst": {
+   "marg_eta": -0.167,
+   "eta": {
+    "early_low": -0.48,
+    "mid": 0.0,
+    "late_high": -0.02
+   },
+   "delta": 0.46,
+   "delta_ci": [
+    0.403,
+    0.517
+   ],
+   "verdict": "PARTIAL-inverted"
+  }
+ },
+ "corollary2_fires": false,
+ "verdict": "No checkpoint fires. Action-dependence (Defect B) confirmed everywhere (all marg_eta<0, predicted direction); history-correlated DIFFERENTIAL (the irreducible kernel) ABSENT on all families (D\u03b7 CI spans 0; olmo_inst inverts).",
+ "axis2_turndepth": {
+  "_note": "Logistic slope of parse-failure on turn index, from negotiation passA runs (deterministic). rates = early(1-2)/mid(3-5)/late(6-8).",
+  "OLMo_base": {
+   "slope": -0.051,
+   "ci": [
+    -0.213,
+    0.075
+   ],
+   "rates": [
+    0.183,
+    0.182,
+    0.12
+   ],
+   "fails": 167
+  },
+  "Zephyr_z_base": {
+   "slope": 0.262,
+   "ci": [
+    0.203,
+    0.321
+   ],
+   "rates": [
+    0.202,
+    0.408,
+    0.472
+   ],
+   "fails": 318
+  },
+  "Zephyr_z_dpo": {
+   "slope": 1.024,
+   "ci": [
+    0.923,
+    1.14
+   ],
+   "rates": [
+    0.037,
+    0.343,
+    0.5
+   ],
+   "fails": 76
+  },
+  "Zephyr_z_sft": {
+   "slope": 0.276,
+   "ci": [
+    -0.01,
+    0.47
+   ],
+   "rates": [
+    0.053,
+    0.085,
+    0.333
+   ],
+   "fails": 45
+  },
+  "Tulu_t_base": {
+   "slope": 0.139,
+   "ci": [
+    0.063,
+    0.209
+   ],
+   "rates": [
+    0.24,
+    0.321,
+    0.423
+   ],
+   "fails": 311
+  },
+  "Tulu_t_sft": "MISSING (no passA; constrained-only scope)",
+  "Tulu_t_dpo": "MISSING (no passA; constrained-only scope)"
+ }
+}

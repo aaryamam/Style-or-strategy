@@ -1,0 +1,66 @@
+{
+  "_note": "Consolidated headline results recorded from the milestone computations (deterministic from persisted raw runs in runs/n500 and runs/n2000 via study.py / zephyr_B.py / zephyr_C.py / tulu_DB.py). No model inference was re-run to produce this file. Numbers flagged MISSING were never computed (out of milestone scope).",
+  "signature": ["opening_aggressiveness", "surplus_efficiency", "haggling", "walkaway", "aggression_penalty"],
+  "condition_primary": "constrained",
+  "base_to_final_four_condition": {
+    "OLMo": {"N": 500, "strict": [0.863, 0.753, 1.005], "lenient": [0.863, 0.753, 1.005], "constrained": [0.792, 0.690, 0.918], "matched": [0.830, 0.707, 0.997], "matched_N": 370,
+      "strict_fail_turns": {"base": 167, "instruct": 0},
+      "wedge_pct": 8,
+      "percomp_constrained": {"opening_aggressiveness": -0.512, "surplus_efficiency": -0.152, "haggling": -0.385, "walkaway": 0.000, "aggression_penalty": -0.452}},
+    "Zephyr": {"N": 500, "strict": [0.682, 0.568, 0.820], "lenient": [0.682, 0.568, 0.820], "constrained": [0.353, 0.271, 0.493], "matched": [0.736, 0.599, 0.907], "matched_N": 318,
+      "strict_fail_turns": {"z_base": 318, "z_dpo": 76},
+      "wedge_pct": 48,
+      "percomp_constrained": {"opening_aggressiveness": 0.138, "surplus_efficiency": 0.280, "haggling": -0.107, "walkaway": -0.150, "aggression_penalty": 0.195}},
+    "Tulu": {"N": 500, "strict": [1.141, 1.037, 1.260], "lenient": [1.141, 1.037, 1.260], "constrained": [0.801, 0.696, 0.931], "matched": [1.196, 1.073, 1.336], "matched_N": 312,
+      "strict_fail_turns": {"t_base": 311, "t_rlvr": 0},
+      "wedge_pct": 30,
+      "percomp_constrained": {"opening_aggressiveness": -0.538, "surplus_efficiency": 0.454, "haggling": 0.607, "walkaway": -0.227, "aggression_penalty": 0.025}}
+  },
+  "gates": {
+    "OLMo": {"note": "first family; signature derived here; aggression_penalty load-bearing; walkaway shared-null (gap 0.000)"},
+    "Zephyr": {"G1_construct_frac_worse": 0.75, "G1_n_rej": 80, "G1_beta": 0.353, "G2_near_constant": false, "G2_anomalous_var": {"aggression_penalty_z_dpo": 1.93, "opening_aggressiveness_z_dpo": 0.021}, "G3_walkaway_gap": -0.150, "G3_walkaway_raw": {"z_base": 0.118, "z_dpo": 0.074}, "verdict": "ADMISSIBLE_with_caveats"},
+    "Tulu": {"G1_construct_frac_worse": 0.59, "G1_n_rej": 285, "G1_beta": 0.066, "G2_near_constant": false, "G2_anomalous_var": false, "G2_var_range": [0.0468, 0.3174], "G3_walkaway_gap": -0.227, "G3_walkaway_raw": {"t_base": 0.111, "t_rlvr": 0.049}, "verdict": "ADMISSIBLE_aggression_inert"}
+  },
+  "zephyr_B3_direction_robustness": {
+    "leverage_drop_top5pct": {
+      "aggression_penalty": {"gap": [0.195, 0.402], "D": [0.353, 0.519], "opposite_olmo": true},
+      "surplus_efficiency": {"gap": [0.280, 0.455], "D": [0.353, 0.569], "opposite_olmo": true},
+      "opening_aggressiveness": {"gap": [0.138, 0.211], "D": [0.353, 0.543], "opposite_olmo": true}},
+    "winsorized_2p5_97p5": {"opening_aggressiveness": 0.100, "surplus_efficiency": 0.295, "aggression_penalty": 0.321, "haggling": -0.107, "walkaway": -0.150, "all_sign_flips_persist": true}
+  },
+  "stage_attribution_constrained": {
+    "OLMo": {"N": 500, "bootstrap": 2000, "steps": {"base->sft": [1.110, 0.989, 1.260], "sft->dpo": [0.701, 0.606, 0.829], "dpo->instruct": [0.096, 0.058, 0.164]},
+      "strict_fail_turns": {"base": 167, "sft": 5, "dpo": 2, "instruct": 0},
+      "percomp": {"base->sft": {"opening_aggressiveness": -0.359, "surplus_efficiency": -0.510, "haggling": -0.642, "walkaway": 0.517, "aggression_penalty": -0.330},
+                   "sft->dpo": {"opening_aggressiveness": -0.133, "surplus_efficiency": 0.277, "haggling": 0.308, "walkaway": -0.454, "aggression_penalty": -0.212},
+                   "dpo->instruct": {"opening_aggressiveness": 0.069, "surplus_efficiency": 0.029, "haggling": -0.006, "walkaway": -0.077, "aggression_penalty": 0.008}},
+      "locus": "supervised", "ci_separated": true},
+    "Zephyr": {"N": 2000, "bootstrap": 10000, "steps": {"z_base->z_sft": [0.418, 0.358, 0.490], "z_sft->z_dpo": [0.586, 0.533, 0.645]},
+      "N500_steps": {"z_base->z_sft": [0.404, 0.298, 0.558], "z_sft->z_dpo": [0.620, 0.528, 0.746]},
+      "strict_fail_turns": {"z_base": 318, "z_sft": 45, "z_dpo": 76},
+      "delta_top2": {"value": 0.168, "ci": [0.101, 0.230], "frac_gt0": 1.000},
+      "percomp_N2000": {"z_base->z_sft": {"opening_aggressiveness": 0.393, "surplus_efficiency": -0.169, "haggling": -0.284, "walkaway": 0.002, "aggression_penalty": 0.058},
+                          "z_sft->z_dpo": {"opening_aggressiveness": -0.345, "surplus_efficiency": 0.476, "haggling": 0.133, "walkaway": -0.179, "aggression_penalty": 0.067}},
+      "locus": "preference", "ci_separated": true},
+    "Tulu": {"N": 2000, "bootstrap": 10000, "steps": {"t_base->t_sft": [0.819, 0.761, 0.883], "t_sft->t_dpo": [1.328, 1.273, 1.387], "t_dpo->t_rlvr": [0.160, 0.136, 0.192]},
+      "strict_fail_turns": {"t_base": 311, "t_sft": "MISSING (no Pass A; constrained-only scope)", "t_dpo": "MISSING (no Pass A; constrained-only scope)", "t_rlvr": 0},
+      "delta_top2": {"value": 0.508, "ci": [0.455, 0.562], "frac_gt0": 1.000},
+      "percomp_N2000": {"t_base->t_sft": {"opening_aggressiveness": -0.422, "surplus_efficiency": -0.156, "haggling": -0.487, "walkaway": 0.628, "aggression_penalty": -0.021},
+                          "t_sft->t_dpo": {"opening_aggressiveness": 0.178, "surplus_efficiency": 0.739, "haggling": 0.976, "walkaway": -0.799, "aggression_penalty": 0.092},
+                          "t_dpo->t_rlvr": {"opening_aggressiveness": -0.151, "surplus_efficiency": -0.051, "haggling": 0.069, "walkaway": 0.054, "aggression_penalty": 0.005}},
+      "locus": "preference", "ci_separated": true, "rlvr_case": "RL-NULL"}
+  },
+  "three_family_synthesis_DB4": {
+    "per_family_sigma": {
+      "OLMo": {"base->sft": [1.110, 0.987, 1.259], "sft->dpo": [0.701, 0.601, 0.823], "dpo->instruct": [0.096, 0.058, 0.163], "locus": "supervised"},
+      "Zephyr": {"z_base->z_sft": [0.418, 0.358, 0.490], "z_sft->z_dpo": [0.586, 0.533, 0.645], "locus": "preference"},
+      "Tulu": {"t_base->t_sft": [0.819, 0.761, 0.883], "t_sft->t_dpo": [1.328, 1.273, 1.387], "t_dpo->t_rlvr": [0.160, 0.136, 0.192], "locus": "preference"}
+    },
+    "shared_pooled_sigma": {
+      "OLMo": {"base->sft": [0.955, 0.859, 1.079], "sft->dpo": [0.651, 0.556, 0.772], "dpo->instruct": [0.068, 0.042, 0.116], "locus": "supervised"},
+      "Zephyr": {"z_base->z_sft": [0.314, 0.271, 0.371], "z_sft->z_dpo": [0.441, 0.400, 0.496], "locus": "preference"},
+      "Tulu": {"t_base->t_sft": [1.119, 1.030, 1.213], "t_sft->t_dpo": [1.570, 1.502, 1.644], "t_dpo->t_rlvr": [0.143, 0.120, 0.169], "locus": "preference"}
+    },
+    "sigma_invariant": true
+  }
+}

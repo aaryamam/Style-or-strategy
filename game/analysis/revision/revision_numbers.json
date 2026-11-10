@@ -1,0 +1,3338 @@
+{
+ "pnLenientCounts": {
+  "value": {
+   "per_checkpoint": {
+    "base": {
+     "recovered": 0,
+     "turns": 924,
+     "strict_fail": 167
+    },
+    "sft": {
+     "recovered": 0,
+     "turns": 620,
+     "strict_fail": 5
+    },
+    "dpo": {
+     "recovered": 0,
+     "turns": 729,
+     "strict_fail": 2
+    },
+    "instruct": {
+     "recovered": 0,
+     "turns": 729,
+     "strict_fail": 0
+    },
+    "z_base": {
+     "recovered": 0,
+     "turns": 1123,
+     "strict_fail": 318
+    },
+    "z_sft": {
+     "recovered": 0,
+     "turns": 770,
+     "strict_fail": 45
+    },
+    "z_dpo": {
+     "recovered": 0,
+     "turns": 847,
+     "strict_fail": 76
+    },
+    "t_base": {
+     "recovered": 0,
+     "turns": 1142,
+     "strict_fail": 311
+    },
+    "t_rlvr": {
+     "recovered": 0,
+     "turns": 1501,
+     "strict_fail": 0
+    }
+   },
+   "per_family": {
+    "OLMo": 0,
+    "Zephyr": 0,
+    "Tulu": 0
+   },
+   "total": 0
+  },
+  "source_script": "analysis/revision/t9_lenient.py",
+  "source_data": [
+   "runs/n500/passA_*.jsonl"
+  ],
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict-forfeit-but-lenient-recovered buyer-action turns"
+ },
+ "lenient.dfam.OLMo": {
+  "value": {
+   "strict": 0.8628677038732169,
+   "lenient": 0.8628677038732169,
+   "gap": 0.0
+  },
+  "source_script": "analysis/revision/t9_lenient.py",
+  "source_data": "runs/n500/passA_base,instruct.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict vs lenient base->final D_fam (N=500), 4-dp"
+ },
+ "lenient.dfam.Zephyr": {
+  "value": {
+   "strict": 0.6820606732098915,
+   "lenient": 0.6820606732098915,
+   "gap": 0.0
+  },
+  "source_script": "analysis/revision/t9_lenient.py",
+  "source_data": "runs/n500/passA_z_base,z_dpo.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict vs lenient base->final D_fam (N=500), 4-dp"
+ },
+ "lenient.dfam.Tulu": {
+  "value": {
+   "strict": 1.1414830249214707,
+   "lenient": 1.1414830249214707,
+   "gap": 0.0
+  },
+  "source_script": "analysis/revision/t9_lenient.py",
+  "source_data": "runs/n500/passA_t_base,t_rlvr.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict vs lenient base->final D_fam (N=500), 4-dp"
+ },
+ "verdicts": {
+  "lenient": "vacuous",
+  "accept_timing": "adaptation",
+  "mde_surplus_binding_pts": 0.1822660098522153,
+  "centered_if": "unchanged",
+  "strict_locus.OLMo": "preserved",
+  "strict_locus.Zephyr": "preserved",
+  "strict_locus.Tulu": "not_computable",
+  "sign_consistency": "consistent",
+  "accept_timing_direction": "indeterminate"
+ },
+ "pnOLMoBeta": {
+  "value": {
+   "beta_base": 0.1805702886561238,
+   "beta_final": -0.14719524532654282,
+   "construct_accepted_mean_surpEff": 0.11605774712303096,
+   "rejected_opening_below_frac": 0.8282828282828283,
+   "n_rejected": 99,
+   "n_accepted": 238,
+   "label": "retrospective"
+  },
+  "source_script": "analysis/revision/t8_olmo_gates.py",
+  "source_data": "runs/n500/constrained_{base,instruct}.jsonl",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "retrospective"
+ },
+ "pnOLMoVar": {
+  "value": {
+   "opening_aggressiveness": {
+    "base": 0.07011294008314298,
+    "final": 0.11151567684310532,
+    "flag": "ok"
+   },
+   "surplus_efficiency": {
+    "base": 0.06922830240005425,
+    "final": 0.1386720626634252,
+    "flag": "ok"
+   },
+   "haggling": {
+    "base": 0.1894839999999993,
+    "final": 0.0947639999999989,
+    "flag": "ok"
+   },
+   "walkaway": {
+    "base": 0.04236938532844731,
+    "final": 0.04236938532844738,
+    "flag": "ok"
+   },
+   "aggression_penalty": {
+    "base": 0.6271389530223219,
+    "final": 0.3544373857609127,
+    "flag": "ok"
+   }
+  },
+  "label": "retrospective",
+  "source_script": "analysis/revision/t8_olmo_gates.py",
+  "source_data": "runs/n500/constrained_{base,instruct}.jsonl",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "retrospective"
+ },
+ "pnOLMoWalk": {
+  "value": {
+   "std_gap_final_minus_base": 0.0,
+   "raw_base": 0.04433497536945813,
+   "raw_final": 0.04433497536945813,
+   "nonnull": false,
+   "label": "retrospective"
+  },
+  "source_script": "analysis/revision/t8_olmo_gates.py",
+  "source_data": "runs/n500/constrained_{base,instruct}.jsonl",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "retrospective"
+ },
+ "pnCenteredDfam": {
+  "value": {
+   "OLMo.base_final": {
+    "published": [
+     0.7923492407181946,
+     0.6903371934220044,
+     0.9178101576585429
+    ],
+    "centered": [
+     0.8557701233767369,
+     0.7535457244544744,
+     0.9759581860900066
+    ],
+    "delta_D": 0.06342088265854229
+   },
+   "OLMo.base->sft": {
+    "published": [
+     1.1102498581128342,
+     0.9893103785924997,
+     1.260316119473357
+    ],
+    "centered": [
+     1.1609364385412086,
+     1.0405300245238343,
+     1.313215620244256
+    ],
+    "delta_D": 0.050686580428374484
+   },
+   "OLMo.sft->dpo": {
+    "published": [
+     0.701179898380343,
+     0.6061976442420558,
+     0.8286966855654516
+    ],
+    "centered": [
+     0.6219134462503114,
+     0.5370390784955437,
+     0.7374883969139192
+    ],
+    "delta_D": -0.07926645213003158
+   },
+   "OLMo.dpo->instruct": {
+    "published": [
+     0.09649068610656157,
+     0.05770672371394275,
+     0.16380657841603616
+    ],
+    "centered": [
+     0.09705420399473914,
+     0.0583532548152869,
+     0.16477763807449175
+    ],
+    "delta_D": 0.0005635178881775726
+   },
+   "Zephyr.base_final": {
+    "published": [
+     0.3865947580099221,
+     0.3364205911728814,
+     0.45223875964300386
+    ],
+    "centered": [
+     0.4482621181689156,
+     0.39345824622463677,
+     0.5178229972723475
+    ],
+    "delta_D": 0.06166736015899349
+   },
+   "Zephyr.z_base->z_sft": {
+    "published": [
+     0.41835332535710595,
+     0.35648802791783074,
+     0.4900711590456389
+    ],
+    "centered": [
+     0.4194176928686102,
+     0.3576139684927147,
+     0.492615047262618
+    ],
+    "delta_D": 0.0010643675115042384
+   },
+   "Zephyr.z_sft->z_dpo": {
+    "published": [
+     0.5860146452806315,
+     0.5323868921402278,
+     0.6483337970910572
+    ],
+    "centered": [
+     0.6041083519977771,
+     0.5496037617980527,
+     0.6643431189477778
+    ],
+    "delta_D": 0.018093706717145608
+   },
+   "Tulu.base_final": {
+    "published": [
+     0.8162225516212755,
+     0.7607631696772342,
+     0.8802988543776419
+    ],
+    "centered": [
+     0.8294093310611929,
+     0.7723760600196916,
+     0.8929199574584938
+    ],
+    "delta_D": 0.013186779439917307
+   },
+   "Tulu.t_base->t_sft": {
+    "published": [
+     0.8191784923696244,
+     0.7610459936102952,
+     0.8833763331130455
+    ],
+    "centered": [
+     0.8224724631715212,
+     0.7631811003757226,
+     0.8872690243117877
+    ],
+    "delta_D": 0.0032939708018968616
+   },
+   "Tulu.t_sft->t_dpo": {
+    "published": [
+     1.3276747708333885,
+     1.273685744634521,
+     1.3856149734016066
+    ],
+    "centered": [
+     1.3601571098541478,
+     1.3070246535944499,
+     1.4158251853075976
+    ],
+    "delta_D": 0.032482339020759365
+   },
+   "Tulu.t_dpo->t_rlvr": {
+    "published": [
+     0.16044430023571488,
+     0.13694418899312052,
+     0.1939660117776551
+    ],
+    "centered": [
+     0.1579419324252318,
+     0.1337825709558147,
+     0.19076497053765945
+    ],
+    "delta_D": -0.002502367810483075
+   }
+  },
+  "source_script": "analysis/revision/t7_centered_if.py",
+  "source_data": "runs/n500/constrained_*.jsonl, runs/n2000/constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "centered univariate IF vs published multivariate IF (study._agg)"
+ },
+ "pnCenteredLocus": {
+  "value": {
+   "OLMo": {
+    "published_locus": "base->sft",
+    "published_cisep": true,
+    "centered_locus": "base->sft",
+    "centered_cisep": true,
+    "preserved": true
+   },
+   "Zephyr": {
+    "published_locus": "z_sft->z_dpo",
+    "published_cisep": true,
+    "centered_locus": "z_sft->z_dpo",
+    "centered_cisep": true,
+    "preserved": true
+   },
+   "Tulu": {
+    "published_locus": "t_sft->t_dpo",
+    "published_cisep": true,
+    "centered_locus": "t_sft->t_dpo",
+    "centered_cisep": true,
+    "preserved": true
+   }
+  },
+  "verdict": "unchanged",
+  "changed_families": [],
+  "source_script": "analysis/revision/t7_centered_if.py",
+  "source_data": "runs/n500,n2000 constrained",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "pnBootstrapRecompute": {
+  "value": "NO",
+  "source_script": "study.py",
+  "source_data": "study.py:dfam",
+  "notes": "study.dfam computes pooled_stats and Sinv=inv(cov(...)) ONCE before the bootstrap loop (study.py dfam: 'stats=...' and 'Sinv=_inv(cov(b,a,stats))' precede 'for _ in range(nboot)'); the loop only resamples indices and re-averages component means via mvec(b,stats,ib). The aggression_penalty per-episode IF entries are fixed at load time by study._wrap/_agg (load_constrained -> _wrap) and never recomputed per resample. Hence IF entries and pooled Sigma are HELD FIXED from the full sample; only the per-component means vary across resamples.",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "strict_locus.OLMo.base->sft": {
+  "value": {
+   "d": 1.1179742934568289
+  },
+  "ci": [
+   0.9880133486057171,
+   1.2839017724689357
+  ],
+  "n": 500,
+  "source_script": "analysis/revision/t5_strict_attribution.py",
+  "source_data": "runs/n500/passA_*.jsonl (strict replay via freepass)",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict-scoring consecutive-step D_fam, N=500"
+ },
+ "strict_locus.OLMo.sft->dpo": {
+  "value": {
+   "d": 0.7097739749654367
+  },
+  "ci": [
+   0.6143761593982237,
+   0.840022415314109
+  ],
+  "n": 500,
+  "source_script": "analysis/revision/t5_strict_attribution.py",
+  "source_data": "runs/n500/passA_*.jsonl (strict replay via freepass)",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict-scoring consecutive-step D_fam, N=500"
+ },
+ "strict_locus.OLMo.dpo->instruct": {
+  "value": {
+   "d": 0.0934493333812069
+  },
+  "ci": [
+   0.05573629588488322,
+   0.16069718871497438
+  ],
+  "n": 500,
+  "source_script": "analysis/revision/t5_strict_attribution.py",
+  "source_data": "runs/n500/passA_*.jsonl (strict replay via freepass)",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict-scoring consecutive-step D_fam, N=500"
+ },
+ "strict_locus.Zephyr.z_base->z_sft": {
+  "value": {
+   "d": 0.43309220946765686
+  },
+  "ci": [
+   0.32497840923914156,
+   0.5840137576846959
+  ],
+  "n": 500,
+  "source_script": "analysis/revision/t5_strict_attribution.py",
+  "source_data": "runs/n500/passA_*.jsonl (strict replay via freepass)",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict-scoring consecutive-step D_fam, N=500"
+ },
+ "strict_locus.Zephyr.z_sft->z_dpo": {
+  "value": {
+   "d": 0.5688345549570244
+  },
+  "ci": [
+   0.4715646528949021,
+   0.6983555976245902
+  ],
+  "n": 500,
+  "source_script": "analysis/revision/t5_strict_attribution.py",
+  "source_data": "runs/n500/passA_*.jsonl (strict replay via freepass)",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict-scoring consecutive-step D_fam, N=500"
+ },
+ "strict_locus.Tulu.t_base->t_rlvr": {
+  "value": {
+   "d": 1.1414830249214707
+  },
+  "ci": [
+   1.0372417341043365,
+   1.2596914363403606
+  ],
+  "n": 500,
+  "source_script": "analysis/revision/t5_strict_attribution.py",
+  "source_data": "runs/n500/passA_*.jsonl (strict replay via freepass)",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "strict-scoring consecutive-step D_fam, N=500"
+ },
+ "pnStrictLocusVerdict": {
+  "value": {
+   "OLMo": {
+    "computable": true,
+    "strict_locus": "base->sft",
+    "constrained_locus": "base->sft",
+    "ci_separated": true,
+    "preserved": true,
+    "ordering": "preserved"
+   },
+   "Zephyr": {
+    "computable": true,
+    "strict_locus": "z_sft->z_dpo",
+    "constrained_locus": "z_sft->z_dpo",
+    "ci_separated": false,
+    "preserved": true,
+    "ordering": "preserved"
+   },
+   "Tulu": {
+    "computable": false,
+    "reason": "only base->final under strict (intermediate passA absent)"
+   }
+  },
+  "source_script": "analysis/revision/t5_strict_attribution.py",
+  "source_data": "runs/n500/passA_*.jsonl (strict replay via freepass)",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "override.olmo_sft": {
+  "value": {
+   "override": 0.006578947368421052,
+   "rescue": 0.008130081300813009,
+   "override_agg": 0.018404907975460124,
+   "agg_n": 163,
+   "override_pass": 0.002577319587628866,
+   "pas_n": 388,
+   "r1_override": 0.00808080808080808,
+   "r1_n": 495,
+   "n_paired": 615,
+   "n_ctx": 613,
+   "n_free_parsed": 608,
+   "tv": 0.003289473684210526
+  },
+  "source_script": "analysis/revision/t4_override_intermediate.py",
+  "source_data": "runs/n500/{passA,constrained}_*.jsonl",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "policy_shift.analyze, context-matched grammar override"
+ },
+ "override.olmo_dpo": {
+  "value": {
+   "override": 0.006906077348066298,
+   "rescue": 0.0027548209366391185,
+   "override_agg": 0.0,
+   "agg_n": 116,
+   "override_pass": 0.008048289738430584,
+   "pas_n": 497,
+   "r1_override": 0.004008016032064128,
+   "r1_n": 499,
+   "n_paired": 726,
+   "n_ctx": 726,
+   "n_free_parsed": 724,
+   "tv": 0.004143646408839779
+  },
+  "source_script": "analysis/revision/t4_override_intermediate.py",
+  "source_data": "runs/n500/{passA,constrained}_*.jsonl",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "policy_shift.analyze, context-matched grammar override"
+ },
+ "override.z_sft": {
+  "value": {
+   "override": 0.010542168674698794,
+   "rescue": 0.057665260196905765,
+   "override_agg": 0.022727272727272728,
+   "agg_n": 88,
+   "override_pass": 0.007211538461538462,
+   "pas_n": 416,
+   "r1_override": 0.0020964360587002098,
+   "r1_n": 477,
+   "n_paired": 711,
+   "n_ctx": 705,
+   "n_free_parsed": 664,
+   "tv": 0.004518072289156627
+  },
+  "source_script": "analysis/revision/t4_override_intermediate.py",
+  "source_data": "runs/n500/{passA,constrained}_*.jsonl",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "policy_shift.analyze, context-matched grammar override"
+ },
+ "override.per_step_exposure": {
+  "value": {
+   "OLMo": [
+    {
+     "step": "olmo_base->olmo_sft",
+     "override_start": 0.2082514734774067,
+     "override_end": 0.006578947368421052,
+     "note": ""
+    },
+    {
+     "step": "olmo_sft->olmo_dpo",
+     "override_start": 0.006578947368421052,
+     "override_end": 0.006906077348066298,
+     "note": ""
+    },
+    {
+     "step": "olmo_dpo->olmo_inst",
+     "override_start": 0.006906077348066298,
+     "override_end": 0.00823045267489712,
+     "note": ""
+    }
+   ],
+   "Zephyr": [
+    {
+     "step": "z_base->z_sft",
+     "override_start": 0.16141732283464566,
+     "override_end": 0.010542168674698794,
+     "note": ""
+    },
+    {
+     "step": "z_sft->z_dpo",
+     "override_start": 0.010542168674698794,
+     "override_end": 0.001402524544179523,
+     "note": ""
+    }
+   ],
+   "Tulu": [
+    {
+     "step": "t_base->t_sft",
+     "override_start": 0.16539923954372623,
+     "override_end": null,
+     "note": "endpoint(s) lack passA free run (\u2013)"
+    },
+    {
+     "step": "t_sft->t_dpo",
+     "override_start": null,
+     "override_end": null,
+     "note": "endpoint(s) lack passA free run (\u2013)"
+    },
+    {
+     "step": "t_dpo->t_rlvr",
+     "override_start": null,
+     "override_end": 0.010759919300605245,
+     "note": "endpoint(s) lack passA free run (\u2013)"
+    }
+   ]
+  },
+  "source_script": "analysis/revision/t4_override_intermediate.py",
+  "source_data": "runs/n500/{passA,constrained}_*.jsonl",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "policy_shift.analyze, context-matched grammar override"
+ },
+ "sign_consistency.base.opa_hold_rate.i_all_constrained": {
+  "value": {
+   "slope": 0.1806106201694862
+  },
+  "ci": [
+   0.1114744463022446,
+   0.23817647275266418
+  ],
+  "n": 703,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "OLMo forced-horizon beta(D) i_all_constrained"
+ },
+ "sign_consistency.base.opa_hold_rate.ii_excl_override": {
+  "value": {
+   "slope": 0.17538920402564515
+  },
+  "ci": [
+   0.09499233596529666,
+   0.24003383848700272
+  ],
+  "n": 576,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "OLMo forced-horizon beta(D) ii_excl_override"
+ },
+ "sign_consistency.base.opa_hold_rate.iii_free_parsed": {
+  "value": {
+   "slope": 0.12624792998147227
+  },
+  "ci": [
+   0.05708413226615856,
+   0.19767124540469583
+  ],
+  "n": 375,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "OLMo forced-horizon beta(D) iii_free_parsed"
+ },
+ "sign_consistency.base.opb_conc_granted.i_all_constrained": {
+  "value": {
+   "slope": -0.9795226102141834
+  },
+  "ci": [
+   -1.1328379633227208,
+   -0.8204917947949502
+  ],
+  "n": 703,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "OLMo forced-horizon beta(D) i_all_constrained"
+ },
+ "sign_consistency.base.opb_conc_granted.ii_excl_override": {
+  "value": {
+   "slope": -0.9755857693105779
+  },
+  "ci": [
+   -1.1491528362150345,
+   -0.8087888094047981
+  ],
+  "n": 576,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "OLMo forced-horizon beta(D) ii_excl_override"
+ },
+ "sign_consistency.base.opb_conc_granted.iii_free_parsed": {
+  "value": {
+   "slope": -0.7188924095779616
+  },
+  "ci": [
+   -0.9027214690753074,
+   -0.5246677177856884
+  ],
+  "n": 375,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "OLMo forced-horizon beta(D) iii_free_parsed"
+ },
+ "sign_consistency.z_base.opa_hold_rate.i_all_constrained": {
+  "value": {
+   "slope": 0.1299724198913053
+  },
+  "ci": [
+   0.03276659850880556,
+   0.2227118604931716
+  ],
+  "n": 498,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Mistral/Zephyr forced-horizon beta(D) i_all_constrained"
+ },
+ "sign_consistency.z_base.opa_hold_rate.ii_excl_override": {
+  "value": {
+   "slope": 0.1478950957542709
+  },
+  "ci": [
+   0.05435689350457307,
+   0.24201886818366491
+  ],
+  "n": 448,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Mistral/Zephyr forced-horizon beta(D) ii_excl_override"
+ },
+ "sign_consistency.z_base.opa_hold_rate.iii_free_parsed": {
+  "value": {
+   "slope": 0.21325177041852178
+  },
+  "ci": [
+   0.11787932011697613,
+   0.31245553540478527
+  ],
+  "n": 561,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Mistral/Zephyr forced-horizon beta(D) iii_free_parsed"
+ },
+ "sign_consistency.z_base.opb_conc_granted.i_all_constrained": {
+  "value": {
+   "slope": -0.9153544861992615
+  },
+  "ci": [
+   -1.2097612507651598,
+   -0.6240585286948954
+  ],
+  "n": 498,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Mistral/Zephyr forced-horizon beta(D) i_all_constrained"
+ },
+ "sign_consistency.z_base.opb_conc_granted.ii_excl_override": {
+  "value": {
+   "slope": -0.8925263889684838
+  },
+  "ci": [
+   -1.1919551460681894,
+   -0.5938152946766369
+  ],
+  "n": 448,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Mistral/Zephyr forced-horizon beta(D) ii_excl_override"
+ },
+ "sign_consistency.z_base.opb_conc_granted.iii_free_parsed": {
+  "value": {
+   "slope": -1.0823055520045128
+  },
+  "ci": [
+   -1.277330632541277,
+   -0.8809290071051061
+  ],
+  "n": 561,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Mistral/Zephyr forced-horizon beta(D) iii_free_parsed"
+ },
+ "sign_consistency.t_base.opa_hold_rate.i_all_constrained": {
+  "value": {
+   "slope": 0.07802284664975709
+  },
+  "ci": [
+   0.012037972601730854,
+   0.14625778109328735
+  ],
+  "n": 401,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Llama/Tulu forced-horizon beta(D) i_all_constrained"
+ },
+ "sign_consistency.t_base.opa_hold_rate.ii_excl_override": {
+  "value": {
+   "slope": 0.07253288209184812
+  },
+  "ci": [
+   -0.0011637156775945248,
+   0.14733242650418563
+  ],
+  "n": 350,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Llama/Tulu forced-horizon beta(D) ii_excl_override"
+ },
+ "sign_consistency.t_base.opa_hold_rate.iii_free_parsed": {
+  "value": {
+   "slope": 0.0952739133307939
+  },
+  "ci": [
+   -0.00628361124440599,
+   0.1944737923991656
+  ],
+  "n": 475,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Llama/Tulu forced-horizon beta(D) iii_free_parsed"
+ },
+ "sign_consistency.t_base.opb_conc_granted.i_all_constrained": {
+  "value": {
+   "slope": -0.6055763726505741
+  },
+  "ci": [
+   -0.8346603956796435,
+   -0.34278932582471044
+  ],
+  "n": 401,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Llama/Tulu forced-horizon beta(D) i_all_constrained"
+ },
+ "sign_consistency.t_base.opb_conc_granted.ii_excl_override": {
+  "value": {
+   "slope": -0.6087009019883725
+  },
+  "ci": [
+   -0.8569827346104432,
+   -0.32928952838088854
+  ],
+  "n": 350,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Llama/Tulu forced-horizon beta(D) ii_excl_override"
+ },
+ "sign_consistency.t_base.opb_conc_granted.iii_free_parsed": {
+  "value": {
+   "slope": -0.7389438454712562
+  },
+  "ci": [
+   -1.0221327334224295,
+   -0.4316911706816163
+  ],
+  "n": 475,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "Llama/Tulu forced-horizon beta(D) iii_free_parsed"
+ },
+ "sign_consistency.verdicts": {
+  "value": {
+   "base.opa_hold_rate": {
+    "consistent": true,
+    "signs": [
+     1,
+     1,
+     1
+    ],
+    "published_ii": 0.175,
+    "got_ii": 0.17538920402564515,
+    "xcheck_ok": true
+   },
+   "base.opb_conc_granted": {
+    "consistent": true,
+    "signs": [
+     -1,
+     -1,
+     -1
+    ],
+    "published_ii": -0.976,
+    "got_ii": -0.9755857693105779,
+    "xcheck_ok": true
+   },
+   "z_base.opa_hold_rate": {
+    "consistent": true,
+    "signs": [
+     1,
+     1,
+     1
+    ],
+    "published_ii": 0.148,
+    "got_ii": 0.1478950957542709,
+    "xcheck_ok": true
+   },
+   "z_base.opb_conc_granted": {
+    "consistent": true,
+    "signs": [
+     -1,
+     -1,
+     -1
+    ],
+    "published_ii": -0.893,
+    "got_ii": -0.8925263889684838,
+    "xcheck_ok": true
+   },
+   "t_base.opa_hold_rate": {
+    "consistent": true,
+    "signs": [
+     1,
+     1,
+     1
+    ],
+    "published_ii": 0.073,
+    "got_ii": 0.07253288209184812,
+    "xcheck_ok": true
+   },
+   "t_base.opb_conc_granted": {
+    "consistent": true,
+    "signs": [
+     -1,
+     -1,
+     -1
+    ],
+    "published_ii": -0.609,
+    "got_ii": -0.6087009019883725,
+    "xcheck_ok": true
+   }
+  },
+  "all_consistent": true,
+  "source_script": "analysis/revision/t6_sign_consistency.py",
+  "source_data": "results/forced_horizon/D_*.jsonl, results/base_artifact/free_D_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "turn set (iii) free-parsed carries Defect-B selection bias"
+ },
+ "pnPermOLMo": {
+  "value": 0.0,
+  "n": 500,
+  "source_script": "analysis/revision/t3_permutation.py",
+  "source_data": "runs/n500,n2000 constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "paired label-swap permutation, B=5000, full-pipeline recompute"
+ },
+ "pnPermZephyr": {
+  "value": 0.0,
+  "n": 500,
+  "source_script": "analysis/revision/t3_permutation.py",
+  "source_data": "runs/n500,n2000 constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "paired label-swap permutation, B=5000, full-pipeline recompute"
+ },
+ "pnPermTulu": {
+  "value": 0.0,
+  "n": 500,
+  "source_script": "analysis/revision/t3_permutation.py",
+  "source_data": "runs/n500,n2000 constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "paired label-swap permutation, B=5000, full-pipeline recompute"
+ },
+ "pnNullFloorFiveHundred": {
+  "value": {
+   "median_range": [
+    0.04517630640798222,
+    0.13746437262167693
+   ],
+   "p95_range": [
+    0.07732285632912149,
+    0.22485126642501715
+   ],
+   "per_comparison": {
+    "base->instruct": {
+     "median": 0.12508834049005763,
+     "p95": 0.20389460174083696
+    },
+    "z_base->z_dpo": {
+     "median": 0.13729546261628528,
+     "p95": 0.22003819466866034
+    },
+    "t_base->t_rlvr": {
+     "median": 0.1371913332250121,
+     "p95": 0.22007293169148337
+    },
+    "base->sft": {
+     "median": 0.13746437262167693,
+     "p95": 0.22485126642501715
+    },
+    "sft->dpo": {
+     "median": 0.1212510773229557,
+     "p95": 0.19589417533723882
+    },
+    "dpo->instruct": {
+     "median": 0.04517630640798222,
+     "p95": 0.07732285632912149
+    }
+   }
+  },
+  "source_script": "analysis/revision/t3_permutation.py",
+  "source_data": "runs/n500,n2000 constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "paired label-swap permutation, B=5000, full-pipeline recompute"
+ },
+ "pnNullFloorTwoK": {
+  "value": {
+   "median_range": [
+    0.03131419189041644,
+    0.07206130902750496
+   ],
+   "p95_range": [
+    0.05041874126777756,
+    0.11662835711830685
+   ],
+   "per_comparison": {
+    "z_base->z_sft": {
+     "median": 0.0692175325649532,
+     "p95": 0.11265117093315588
+    },
+    "z_sft->z_dpo": {
+     "median": 0.0654210657904207,
+     "p95": 0.10577437367653017
+    },
+    "t_base->t_sft": {
+     "median": 0.07206130902750496,
+     "p95": 0.11662835711830685
+    },
+    "t_sft->t_dpo": {
+     "median": 0.0704613592251406,
+     "p95": 0.11602641233024197
+    },
+    "t_dpo->t_rlvr": {
+     "median": 0.03131419189041644,
+     "p95": 0.05041874126777756
+    }
+   }
+  },
+  "source_script": "analysis/revision/t3_permutation.py",
+  "source_data": "runs/n500,n2000 constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "paired label-swap permutation, B=5000, full-pipeline recompute"
+ },
+ "pnRLVRFloorCompareOLMo": {
+  "value": {
+   "step": "dpo->instruct",
+   "observed_D": 0.09649068610656185,
+   "p": 0.0046,
+   "N": 500,
+   "percentile_position": 0.9954,
+   "null_median": 0.04517630640798222,
+   "null_p95": 0.07732285632912149
+  },
+  "source_script": "analysis/revision/t3_permutation.py",
+  "source_data": "runs/n500,n2000 constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "paired label-swap permutation, B=5000, full-pipeline recompute"
+ },
+ "pnRLVRFloorCompareTulu": {
+  "value": {
+   "step": "t_dpo->t_rlvr",
+   "observed_D": 0.16044430023571596,
+   "p": 0.0,
+   "N": 2000,
+   "percentile_position": 1.0,
+   "null_median": 0.03131419189041644,
+   "null_p95": 0.05041874126777756
+  },
+  "source_script": "analysis/revision/t3_permutation.py",
+  "source_data": "runs/n500,n2000 constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "paired label-swap permutation, B=5000, full-pipeline recompute"
+ },
+ "permutation.all": {
+  "value": {
+   "base->instruct": {
+    "family": "OLMo",
+    "kind": "base_final",
+    "N": 500,
+    "observed_D": 0.792349240718201,
+    "p": 0.0,
+    "null_median": 0.12508834049005763,
+    "null_mean": 0.12793361775095202,
+    "null_p95": 0.20389460174083696,
+    "null_min": 0.013162548102434387,
+    "null_max": 0.31862423395171424,
+    "unpaired_approx_sqrt2k_N": 0.1414213562373095,
+    "percentile_of_observed": 1.0
+   },
+   "z_base->z_dpo": {
+    "family": "Zephyr",
+    "kind": "base_final",
+    "N": 500,
+    "observed_D": 0.35270848111336833,
+    "p": 0.0,
+    "null_median": 0.13729546261628528,
+    "null_mean": 0.14036785666112814,
+    "null_p95": 0.22003819466866034,
+    "null_min": 0.02300354694331201,
+    "null_max": 0.32371270506078453,
+    "unpaired_approx_sqrt2k_N": 0.1414213562373095,
+    "percentile_of_observed": 1.0
+   },
+   "t_base->t_rlvr": {
+    "family": "Tulu",
+    "kind": "base_final",
+    "N": 500,
+    "observed_D": 0.8013268156995513,
+    "p": 0.0,
+    "null_median": 0.1371913332250121,
+    "null_mean": 0.14005386552457222,
+    "null_p95": 0.22007293169148337,
+    "null_min": 0.015913513014059896,
+    "null_max": 0.3239832165292287,
+    "unpaired_approx_sqrt2k_N": 0.1414213562373095,
+    "percentile_of_observed": 1.0
+   },
+   "base->sft": {
+    "family": "OLMo",
+    "kind": "step",
+    "N": 500,
+    "observed_D": 1.1102498581128324,
+    "p": 0.0,
+    "null_median": 0.13746437262167693,
+    "null_mean": 0.14124406351957283,
+    "null_p95": 0.22485126642501715,
+    "null_min": 0.026810776991303218,
+    "null_max": 0.3457166170626958,
+    "unpaired_approx_sqrt2k_N": 0.1414213562373095,
+    "percentile_of_observed": 1.0
+   },
+   "sft->dpo": {
+    "family": "OLMo",
+    "kind": "step",
+    "N": 500,
+    "observed_D": 0.7011798983803395,
+    "p": 0.0,
+    "null_median": 0.1212510773229557,
+    "null_mean": 0.12461427079905316,
+    "null_p95": 0.19589417533723882,
+    "null_min": 0.016427090949437607,
+    "null_max": 0.3014457413715511,
+    "unpaired_approx_sqrt2k_N": 0.1414213562373095,
+    "percentile_of_observed": 1.0
+   },
+   "dpo->instruct": {
+    "family": "OLMo",
+    "kind": "step",
+    "N": 500,
+    "observed_D": 0.09649068610656185,
+    "p": 0.0046,
+    "null_median": 0.04517630640798222,
+    "null_mean": 0.046839820792801606,
+    "null_p95": 0.07732285632912149,
+    "null_min": 0.012653425811724534,
+    "null_max": 0.11340933670928273,
+    "unpaired_approx_sqrt2k_N": 0.1414213562373095,
+    "percentile_of_observed": 0.9954
+   },
+   "z_base->z_sft": {
+    "family": "Zephyr",
+    "kind": "step",
+    "N": 2000,
+    "observed_D": 0.4183533253571044,
+    "p": 0.0,
+    "null_median": 0.0692175325649532,
+    "null_mean": 0.07085930933535826,
+    "null_p95": 0.11265117093315588,
+    "null_min": 0.011880459644350595,
+    "null_max": 0.18531119772688676,
+    "unpaired_approx_sqrt2k_N": 0.07071067811865475,
+    "percentile_of_observed": 1.0
+   },
+   "z_sft->z_dpo": {
+    "family": "Zephyr",
+    "kind": "step",
+    "N": 2000,
+    "observed_D": 0.5860146452806301,
+    "p": 0.0,
+    "null_median": 0.0654210657904207,
+    "null_mean": 0.06671970972487642,
+    "null_p95": 0.10577437367653017,
+    "null_min": 0.011175863879373183,
+    "null_max": 0.1637555975630579,
+    "unpaired_approx_sqrt2k_N": 0.07071067811865475,
+    "percentile_of_observed": 1.0
+   },
+   "t_base->t_sft": {
+    "family": "Tulu",
+    "kind": "step",
+    "N": 2000,
+    "observed_D": 0.819178492369633,
+    "p": 0.0,
+    "null_median": 0.07206130902750496,
+    "null_mean": 0.07369369304021313,
+    "null_p95": 0.11662835711830685,
+    "null_min": 0.009988975440815185,
+    "null_max": 0.1764663469525311,
+    "unpaired_approx_sqrt2k_N": 0.07071067811865475,
+    "percentile_of_observed": 1.0
+   },
+   "t_sft->t_dpo": {
+    "family": "Tulu",
+    "kind": "step",
+    "N": 2000,
+    "observed_D": 1.3276747708333905,
+    "p": 0.0,
+    "null_median": 0.0704613592251406,
+    "null_mean": 0.07232761389282456,
+    "null_p95": 0.11602641233024197,
+    "null_min": 0.013528012154928217,
+    "null_max": 0.17792513959496756,
+    "unpaired_approx_sqrt2k_N": 0.07071067811865475,
+    "percentile_of_observed": 1.0
+   },
+   "t_dpo->t_rlvr": {
+    "family": "Tulu",
+    "kind": "step",
+    "N": 2000,
+    "observed_D": 0.16044430023571596,
+    "p": 0.0,
+    "null_median": 0.03131419189041644,
+    "null_mean": 0.03199387052126616,
+    "null_p95": 0.05041874126777756,
+    "null_min": 0.003296545459130768,
+    "null_max": 0.07584307086036887,
+    "unpaired_approx_sqrt2k_N": 0.07071067811865475,
+    "percentile_of_observed": 1.0
+   }
+  },
+  "source_script": "analysis/revision/t3_permutation.py",
+  "source_data": "runs/n500,n2000 constrained_*.jsonl",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "notes": "paired label-swap permutation, B=5000, full-pipeline recompute"
+ },
+ "rlvr_realized.base": {
+  "value": {
+   "strict_surplus": -0.054187192118226604,
+   "constrained_surplus": 0.3472906403940887,
+   "gap_surplus": 0.4014778325123153,
+   "strict_eff": -0.02619084124982809,
+   "constrained_eff": -0.012988370073112229,
+   "gap_eff": 0.013202471176715863
+  },
+  "n": 406,
+  "source_data": "runs/n500/{passA,constrained}_base.jsonl",
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "rlvr_realized.instruct": {
+  "value": {
+   "strict_surplus": -0.37438423645320196,
+   "constrained_surplus": -0.3842364532019704,
+   "gap_surplus": -0.009852216748768461,
+   "strict_eff": -0.0605014121975525,
+   "constrained_eff": -0.059868797473507505,
+   "gap_eff": 0.0006326147240449942
+  },
+  "n": 406,
+  "source_data": "runs/n500/{passA,constrained}_instruct.jsonl",
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "rlvr_realized.z_base": {
+  "value": {
+   "strict_surplus": -0.5812807881773399,
+   "constrained_surplus": 1.3448275862068966,
+   "gap_surplus": 1.9261083743842364,
+   "strict_eff": -0.053755151832589394,
+   "constrained_eff": 0.03431206062549486,
+   "gap_eff": 0.08806721245808426
+  },
+  "n": 406,
+  "source_data": "runs/n500/{passA,constrained}_z_base.jsonl",
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "rlvr_realized.z_dpo": {
+  "value": {
+   "strict_surplus": 2.5541871921182264,
+   "constrained_surplus": 2.5714285714285716,
+   "gap_surplus": 0.017241379310345195,
+   "strict_eff": 0.0911251788804818,
+   "constrained_eff": 0.09232026477699322,
+   "gap_eff": 0.0011950858965114192
+  },
+  "n": 406,
+  "source_data": "runs/n500/{passA,constrained}_z_dpo.jsonl",
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "rlvr_realized.t_base": {
+  "value": {
+   "strict_surplus": 0.6354679802955665,
+   "constrained_surplus": 1.2857142857142858,
+   "gap_surplus": 0.6502463054187193,
+   "strict_eff": 0.007423141718112143,
+   "constrained_eff": 0.024852283780385818,
+   "gap_eff": 0.017429142062273674
+  },
+  "n": 406,
+  "source_data": "runs/n500/{passA,constrained}_t_base.jsonl",
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "rlvr_realized.t_rlvr": {
+  "value": {
+   "strict_surplus": 3.9827586206896552,
+   "constrained_surplus": 3.9679802955665027,
+   "gap_surplus": -0.01477832512315258,
+   "strict_eff": 0.15039288691757616,
+   "constrained_eff": 0.14833553454349874,
+   "gap_eff": -0.0020573523740774202
+  },
+  "n": 406,
+  "source_data": "runs/n500/{passA,constrained}_t_rlvr.jsonl",
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "pnRLVRSurplus": {
+  "value": -0.01477832512315258,
+  "n": 406,
+  "source_data": "runs/n500/{passA,constrained}_t_rlvr.jsonl",
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "pnRLVRPct": {
+  "value": -0.3724394785847267,
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "pnRLVRBaselinePct": {
+  "value": 115.60283687943263,
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "rlvr_latent_exposure": {
+  "value": {
+   "t_rlvr_shared_decisive_pooledseeds": {
+    "n_aggressive_gen": 2880,
+    "abs_parse_fail_rate": 0.44548611111111114,
+    "mean_eff_room": 19.47222222222222,
+    "mean_exposure_room": 8.687847222222222,
+    "total_exposure_room": 25021
+   },
+   "t_rlvr_own_decisive": {
+    "n_aggressive_gen": 120,
+    "abs_parse_fail_rate": 0.5,
+    "mean_eff_room": 17.833333333333332,
+    "mean_exposure_room": 8.916666666666666,
+    "total_exposure_room": 1070
+   },
+   "t_rlvr_own_reached": {
+    "n_aggressive_gen": 1800,
+    "abs_parse_fail_rate": 0.4988888888888889,
+    "mean_eff_room": 1.1888888888888889,
+    "mean_exposure_room": 0.5944444444444444,
+    "total_exposure_room": 1070
+   },
+   "olmo_base_shared_decisive_pooledseeds": {
+    "n_aggressive_gen": 2880,
+    "abs_parse_fail_rate": 0.6934027777777778,
+    "mean_eff_room": 19.47222222222222,
+    "mean_exposure_room": 13.445833333333333,
+    "total_exposure_room": 38724
+   }
+  },
+  "source_data": "results/realized_robust/probe_{t_rlvr,olmo_base}_*.jsonl",
+  "seed": "1234+777",
+  "notes": "delta = forfeited (no-op) turn; no-deal default captured surplus 0",
+  "source_script": "analysis/revision/t10_rlvr_forfeit.py",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "pnMDEsurplus": {
+  "value": 0.1822660098522153,
+  "notes": "largest defensible excluded surplus (points), cell=forced_k4.base.opb, beta_max=1.1285130113132051; sanity anchor <= ~0.18 pts",
+  "source_script": "analysis/revision/t2_mde_surplus.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json"
+ },
+ "pnMDEpct": {
+  "value": 1.7865765330757943,
+  "notes": "as % of flat buyer surplus; cell=forced_k4.base.opb",
+  "source_script": "analysis/revision/t2_mde_surplus.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json"
+ },
+ "mde_surplus.cells": {
+  "value": {
+   "natural_T8.base.opa": {
+    "beta_D": 0.053494615604413175,
+    "ci": [
+     -0.153462176965814,
+     0.2748105644220356
+    ],
+    "beta_max": 0.2748105644220356,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 0.500102714610474,
+    "c_adapt_argmax": 0.0,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.0,
+    "excluded_pct_of_flat": 0.0,
+    "n_obs": 63
+   },
+   "natural_T8.instruct.opa": {
+    "beta_D": 0.015332430601877403,
+    "ci": [
+     -0.14354125199656112,
+     0.16771489366675624
+    ],
+    "beta_max": 0.16771489366675624,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 0.30520905839173884,
+    "c_adapt_argmax": 0.0,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.0,
+    "excluded_pct_of_flat": 0.0,
+    "n_obs": 30
+   },
+   "natural_T8.z_base.opa": {
+    "beta_D": -0.04882682329000412,
+    "ci": [
+     -0.36167454718818404,
+     0.1730410873566419
+    ],
+    "beta_max": 0.36167454718818404,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 0.6581785646950239,
+    "c_adapt_argmax": 0.0,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.0,
+    "excluded_pct_of_flat": 0.0,
+    "n_obs": 96
+   },
+   "natural_T8.z_dpo.opa": {
+    "beta_D": -0.048539146866728985,
+    "ci": [
+     -0.1261301414419806,
+     0.029166209668830215
+    ],
+    "beta_max": 0.1261301414419806,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 0.2295327556347744,
+    "c_adapt_argmax": 0.0,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.0,
+    "excluded_pct_of_flat": 0.0,
+    "n_obs": 96
+   },
+   "natural_T8.t_base.opa": {
+    "beta_D": 0.06775629737573141,
+    "ci": [
+     -0.018644230363998288,
+     0.1678596982146689
+    ],
+    "beta_max": 0.1678596982146689,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 0.30547257499872,
+    "c_adapt_argmax": 0.0,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.0,
+    "excluded_pct_of_flat": 0.0,
+    "n_obs": 197
+   },
+   "natural_T8.t_rlvr.opa": {
+    "beta_D": -0.0497466428235414,
+    "ci": [
+     -0.18098318158206242,
+     0.07817357271361056
+    ],
+    "beta_max": 0.18098318158206242,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 0.32935480700454545,
+    "c_adapt_argmax": 0.0,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.0,
+    "excluded_pct_of_flat": 0.0,
+    "n_obs": 524
+   },
+   "natural_T8.base.opb": {
+    "beta_D": -0.30648520621278846,
+    "ci": [
+     -1.737401196284872,
+     1.0090835779748417
+    ],
+    "beta_max": 1.737401196284872,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 3.1617381830168045,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.12807881773398933,
+    "excluded_pct_of_flat": 1.218369259606365,
+    "n_obs": 63
+   },
+   "natural_T8.instruct.opb": {
+    "beta_D": -0.09274617081791167,
+    "ci": [
+     -1.0725095987538709,
+     0.9458188757108809
+    ],
+    "beta_max": 1.0725095987538709,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 1.9517625274364914,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.12807881773398933,
+    "excluded_pct_of_flat": 1.218369259606365,
+    "n_obs": 30
+   },
+   "natural_T8.z_base.opb": {
+    "beta_D": -0.16445089644548766,
+    "ci": [
+     -1.360126978991353,
+     1.6603128158568778
+    ],
+    "beta_max": 1.6603128158568778,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 3.021452061200326,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.12807881773398933,
+    "excluded_pct_of_flat": 1.218369259606365,
+    "n_obs": 96
+   },
+   "natural_T8.z_dpo.opb": {
+    "beta_D": 0.2869375354496662,
+    "ci": [
+     -0.21892339323804905,
+     0.8017523200362842
+    ],
+    "beta_max": 0.8017523200362842,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 1.4590360182792173,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.12807881773398933,
+    "excluded_pct_of_flat": 1.218369259606365,
+    "n_obs": 96
+   },
+   "natural_T8.t_base.opb": {
+    "beta_D": -0.49922746248634803,
+    "ci": [
+     -1.1318034723469463,
+     0.09989501684050861
+    ],
+    "beta_max": 1.1318034723469463,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 2.059666047106602,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.12807881773398933,
+    "excluded_pct_of_flat": 1.218369259606365,
+    "n_obs": 197
+   },
+   "natural_T8.t_rlvr.opb": {
+    "beta_D": 0.047261687537300534,
+    "ci": [
+     -0.6516850787406133,
+     0.6905694696976468
+    ],
+    "beta_max": 0.6905694696976468,
+    "rho_bar": 0.5495082437936443,
+    "c_adapt_bound": 1.2567044762243367,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.51231527093596,
+    "excluded_points": 0.12807881773398933,
+    "excluded_pct_of_flat": 1.218369259606365,
+    "n_obs": 524
+   },
+   "forced_k4.base.opa": {
+    "beta_D": 0.1806106201694862,
+    "ci": [
+     0.11280669785707637,
+     0.23894714172455023
+    ],
+    "beta_max": 0.23894714172455023,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 0.40914623068841066,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.08128078817733986,
+    "excluded_pct_of_flat": 0.7967165620473197,
+    "n_obs": 703
+   },
+   "forced_k4.instruct.opa": {
+    "beta_D": 0.03377028154348374,
+    "ci": [
+     -0.04850886810631704,
+     0.11232228715801032
+    ],
+    "beta_max": 0.11232228715801032,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 0.19232806084777493,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.08128078817733986,
+    "excluded_pct_of_flat": 0.7967165620473197,
+    "n_obs": 83
+   },
+   "forced_k4.z_base.opa": {
+    "beta_D": 0.1299724198913053,
+    "ci": [
+     0.02628702970681458,
+     0.22752366959914194
+    ],
+    "beta_max": 0.22752366959914194,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 0.3895859608824935,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.08128078817733986,
+    "excluded_pct_of_flat": 0.7967165620473197,
+    "n_obs": 498
+   },
+   "forced_k4.z_dpo.opa": {
+    "beta_D": 0.009814331228650604,
+    "ci": [
+     -0.020624318654986235,
+     0.03930201057997853
+    ],
+    "beta_max": 0.03930201057997853,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 0.0672963458412531,
+    "c_adapt_argmax": 0.0,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.0,
+    "excluded_pct_of_flat": 0.0,
+    "n_obs": 328
+   },
+   "forced_k4.t_base.opa": {
+    "beta_D": 0.07802284664975709,
+    "ci": [
+     0.00963775117636595,
+     0.14532163601268488
+    ],
+    "beta_max": 0.14532163601268488,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 0.24883243709441,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.08128078817733986,
+    "excluded_pct_of_flat": 0.7967165620473197,
+    "n_obs": 401
+   },
+   "forced_k4.t_rlvr.opa": {
+    "beta_D": -0.010651156976786848,
+    "ci": [
+     -0.10093803763785322,
+     0.07929693768085083
+    ],
+    "beta_max": 0.10093803763785322,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 0.1728349514229382,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.08128078817733986,
+    "excluded_pct_of_flat": 0.7967165620473197,
+    "n_obs": 777
+   },
+   "forced_k4.base.opb": {
+    "beta_D": -0.9795226102141834,
+    "ci": [
+     -1.1285130113132051,
+     -0.8257475565946959
+    ],
+    "beta_max": 1.1285130113132051,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 1.9323388492082818,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.1822660098522153,
+    "excluded_pct_of_flat": 1.7865765330757943,
+    "n_obs": 703
+   },
+   "forced_k4.instruct.opb": {
+    "beta_D": -0.2224778988143927,
+    "ci": [
+     -0.7035950318871841,
+     0.2917677748358827
+    ],
+    "beta_max": 0.7035950318871841,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 1.2047570569376533,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.1822660098522153,
+    "excluded_pct_of_flat": 1.7865765330757943,
+    "n_obs": 83
+   },
+   "forced_k4.z_base.opb": {
+    "beta_D": -0.9153544861992615,
+    "ci": [
+     -1.2007350687772533,
+     -0.6277297691819668
+    ],
+    "beta_max": 1.2007350687772533,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 2.0560037835142992,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.1822660098522153,
+    "excluded_pct_of_flat": 1.7865765330757943,
+    "n_obs": 498
+   },
+   "forced_k4.z_dpo.opb": {
+    "beta_D": -0.09983212070647274,
+    "ci": [
+     -0.2894725794968031,
+     0.09180645905658355
+    ],
+    "beta_max": 0.2894725794968031,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 0.49566031187474013,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.1822660098522153,
+    "excluded_pct_of_flat": 1.7865765330757943,
+    "n_obs": 328
+   },
+   "forced_k4.t_base.opb": {
+    "beta_D": -0.6055763726505741,
+    "ci": [
+     -0.8331898288243023,
+     -0.33977127439651117
+    ],
+    "beta_max": 0.8331898288243023,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 1.4266606223076679,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.1822660098522153,
+    "excluded_pct_of_flat": 1.7865765330757943,
+    "n_obs": 401
+   },
+   "forced_k4.t_rlvr.opb": {
+    "beta_D": -0.21665759497640913,
+    "ci": [
+     -0.5568227576794055,
+     0.14396462836526025
+    ],
+    "beta_max": 0.5568227576794055,
+    "rho_bar": 0.5840140365524296,
+    "c_adapt_bound": 0.953440710032347,
+    "c_adapt_argmax": 0.07,
+    "s_flat": 10.201970443349754,
+    "excluded_points": 0.1822660098522153,
+    "excluded_pct_of_flat": 1.7865765330757943,
+    "n_obs": 777
+   }
+  },
+  "source_script": "analysis/revision/t2_mde_surplus.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json"
+ },
+ "accept_timing.seller.base.opa_hold_rate.D": {
+  "value": {
+   "coef": -0.13404785183162998
+  },
+  "ci": [
+   -4.577582215444508,
+   1.7175785846523566
+  ],
+  "n": 483,
+  "source_data": "runs/seller_exp/D_base.jsonl",
+  "notes": "accepts=24; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.base.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -0.012209525737113059
+  },
+  "ci": [
+   -0.6255343598642593,
+   0.5251998013225762
+  ],
+  "source_data": "runs/seller_exp/*_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.base.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": 12.17795813410648
+  },
+  "ci": [
+   -0.4238232995048123,
+   17.227687334198936
+  ],
+  "source_data": "runs/seller_exp/[BC]_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.base.opb_conc_granted.D": {
+  "value": {
+   "coef": 3.888975154657514
+  },
+  "ci": [
+   -8.82431879588491,
+   12.981068100480035
+  ],
+  "n": 483,
+  "source_data": "runs/seller_exp/D_base.jsonl",
+  "notes": "accepts=24; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.base.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 2.742417247593893
+  },
+  "ci": [
+   -0.04000390936008698,
+   5.297022966319979
+  ],
+  "source_data": "runs/seller_exp/*_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.base.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": -38.22875663749441
+  },
+  "ci": [
+   -142.14652648308797,
+   -3.7184397854473854
+  ],
+  "source_data": "runs/seller_exp/[BC]_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.instruct.opa_hold_rate.D": {
+  "value": {
+   "coef": -0.4033120526500087
+  },
+  "ci": [
+   -1.2959958317712164,
+   0.5410616311708778
+  ],
+  "n": 533,
+  "source_data": "runs/seller_exp/D_instruct.jsonl",
+  "notes": "accepts=131; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.instruct.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -0.12767419044585465
+  },
+  "ci": [
+   -0.5251329943249528,
+   0.2439093094812562
+  ],
+  "source_data": "runs/seller_exp/*_instruct.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.instruct.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": 1.41922799264545
+  },
+  "ci": [
+   -6.846597625669722,
+   19.793101562160228
+  ],
+  "source_data": "runs/seller_exp/[BC]_instruct.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.instruct.opb_conc_granted.D": {
+  "value": {
+   "coef": 6.237763549324036
+  },
+  "ci": [
+   -0.5254372141402197,
+   11.398781862577199
+  ],
+  "n": 533,
+  "source_data": "runs/seller_exp/D_instruct.jsonl",
+  "notes": "accepts=131; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.instruct.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 4.418646456310243
+  },
+  "ci": [
+   2.629666144982573,
+   6.609444516830699
+  ],
+  "source_data": "runs/seller_exp/*_instruct.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.instruct.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": 1.2813489943352678
+  },
+  "ci": [
+   -18.472166150907682,
+   12.731755939838767
+  ],
+  "source_data": "runs/seller_exp/[BC]_instruct.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_base.opa_hold_rate.D": {
+  "value": {
+   "coef": 0.5196167718721284
+  },
+  "ci": [
+   -1.4926945587252383,
+   1.8950655548088335
+  ],
+  "n": 543,
+  "source_data": "runs/seller_exp/D_z_base.jsonl",
+  "notes": "accepts=32; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_base.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -0.03689714114207218
+  },
+  "ci": [
+   -0.6539908521162346,
+   0.5247363759656504
+  ],
+  "source_data": "runs/seller_exp/*_z_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_base.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": 3.3075516205345443
+  },
+  "ci": [
+   -0.11814579277696002,
+   13.744028899569015
+  ],
+  "source_data": "runs/seller_exp/[BC]_z_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_base.opb_conc_granted.D": {
+  "value": {
+   "coef": 1.6158367769374473
+  },
+  "ci": [
+   -7.322948054167872,
+   9.060962181060857
+  ],
+  "n": 543,
+  "source_data": "runs/seller_exp/D_z_base.jsonl",
+  "notes": "accepts=32; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_base.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 2.7765700952791894
+  },
+  "ci": [
+   0.779562079331326,
+   4.758111869699914
+  ],
+  "source_data": "runs/seller_exp/*_z_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_base.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": 1.1542771523191635
+  },
+  "ci": [
+   -9.424926005950505,
+   7.692748667350105
+  ],
+  "source_data": "runs/seller_exp/[BC]_z_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_dpo.opa_hold_rate.D": {
+  "value": {
+   "coef": -4.746384707509988
+  },
+  "ci": [
+   -24.79194608935862,
+   -1.603396720846377
+  ],
+  "n": 541,
+  "source_data": "runs/seller_exp/D_z_dpo.jsonl",
+  "notes": "accepts=14; spans0=False",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_dpo.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -3.2825737911253317
+  },
+  "ci": [
+   -4.4295727986203195,
+   -2.4465261208379365
+  ],
+  "source_data": "runs/seller_exp/*_z_dpo.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_dpo.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": -3.069092691639044
+  },
+  "ci": [
+   -4.30377562316538,
+   -2.195237934596306
+  ],
+  "source_data": "runs/seller_exp/[BC]_z_dpo.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_dpo.opb_conc_granted.D": {
+  "value": {
+   "coef": 6.345757879400205
+  },
+  "ci": [
+   -6.854949444991132,
+   33.69868827222713
+  ],
+  "n": 541,
+  "source_data": "runs/seller_exp/D_z_dpo.jsonl",
+  "notes": "accepts=14; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_dpo.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 16.6205883111439
+  },
+  "ci": [
+   12.233846971743695,
+   22.955016195179724
+  ],
+  "source_data": "runs/seller_exp/*_z_dpo.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.z_dpo.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": 16.527721925012305
+  },
+  "ci": [
+   10.905325334756014,
+   24.693357565442366
+  ],
+  "source_data": "runs/seller_exp/[BC]_z_dpo.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_base.opa_hold_rate.D": {
+  "value": {
+   "coef": 0.33959689081831
+  },
+  "ci": [
+   -0.41273311456467543,
+   1.0612486926703728
+  ],
+  "n": 692,
+  "source_data": "runs/seller_exp/D_t_base.jsonl",
+  "notes": "accepts=81; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_base.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": 0.14679218657064982
+  },
+  "ci": [
+   -0.18886704341663238,
+   0.4519906347755063
+  ],
+  "source_data": "runs/seller_exp/*_t_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_base.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": 0.2481904313267146
+  },
+  "ci": [
+   -1.0264961677143978,
+   2.7924363982749196
+  ],
+  "source_data": "runs/seller_exp/[BC]_t_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_base.opb_conc_granted.D": {
+  "value": {
+   "coef": -0.5691794868344426
+  },
+  "ci": [
+   -5.005166779158604,
+   3.307183882252133
+  ],
+  "n": 692,
+  "source_data": "runs/seller_exp/D_t_base.jsonl",
+  "notes": "accepts=81; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_base.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 0.4090494966439076
+  },
+  "ci": [
+   -0.9628632710620979,
+   1.7373442702693156
+  ],
+  "source_data": "runs/seller_exp/*_t_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_base.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": 0.02868954274242208
+  },
+  "ci": [
+   -5.5941960136011195,
+   5.298762305173531
+  ],
+  "source_data": "runs/seller_exp/[BC]_t_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_rlvr.opa_hold_rate.D": {
+  "value": {
+   "coef": 0.4490225194315911
+  },
+  "ci": [
+   -1.220532245976314,
+   1.837604351807291
+  ],
+  "n": 1034,
+  "source_data": "runs/seller_exp/D_t_rlvr.jsonl",
+  "notes": "accepts=38; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_rlvr.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -0.3149018540038802
+  },
+  "ci": [
+   -0.8018763161597039,
+   0.14925644866217724
+  ],
+  "source_data": "runs/seller_exp/*_t_rlvr.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_rlvr.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": -1.2297762911600612
+  },
+  "ci": [
+   -3.165256235223789,
+   1.2276795146840087
+  ],
+  "source_data": "runs/seller_exp/[BC]_t_rlvr.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_rlvr.opb_conc_granted.D": {
+  "value": {
+   "coef": -2.640632381846321
+  },
+  "ci": [
+   -9.228634419455686,
+   3.9242765163329416
+  ],
+  "n": 1034,
+  "source_data": "runs/seller_exp/D_t_rlvr.jsonl",
+  "notes": "accepts=38; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_rlvr.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 1.5982576777511512
+  },
+  "ci": [
+   -0.05508084068907634,
+   3.439262005197897
+  ],
+  "source_data": "runs/seller_exp/*_t_rlvr.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.seller.t_rlvr.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": -0.19270799921179727
+  },
+  "ci": [
+   -8.42578688889736,
+   5.879956972239377
+  ],
+  "source_data": "runs/seller_exp/[BC]_t_rlvr.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.base.opa_hold_rate.D": {
+  "value": {
+   "coef": 0.03432313011996811
+  },
+  "ci": [
+   -0.5225236942954592,
+   0.5352784474146216
+  ],
+  "n": 1351,
+  "source_data": "results/forced_horizon/D_base.jsonl",
+  "notes": "accepts=206; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.base.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": 0.023208373252713365
+  },
+  "ci": [
+   -0.2457169167221031,
+   0.2718296215232619
+  ],
+  "source_data": "results/forced_horizon/*_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.base.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": 0.011394520500813021
+  },
+  "ci": [
+   -0.7659256532896194,
+   0.9149020037540659
+  ],
+  "source_data": "results/forced_horizon/[BC]_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.base.opb_conc_granted.D": {
+  "value": {
+   "coef": -0.781459462549595
+  },
+  "ci": [
+   -2.2519864089897803,
+   0.6053383645778914
+  ],
+  "n": 1351,
+  "source_data": "results/forced_horizon/D_base.jsonl",
+  "notes": "accepts=206; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.base.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 0.2514259853485687
+  },
+  "ci": [
+   -0.43696904241082124,
+   0.938169224209281
+  ],
+  "source_data": "results/forced_horizon/*_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.base.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": -0.4601319493898015
+  },
+  "ci": [
+   -3.9865562226198916,
+   2.90313967477882
+  ],
+  "source_data": "results/forced_horizon/[BC]_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.instruct.opa_hold_rate.D": {
+  "value": {
+   "coef": -0.3861845579167869
+  },
+  "ci": [
+   -0.8966374122174697,
+   0.14777750299936998
+  ],
+  "n": 840,
+  "source_data": "results/forced_horizon/D_instruct.jsonl",
+  "notes": "accepts=354; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.instruct.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -0.2039036993696511
+  },
+  "ci": [
+   -0.48383082502044333,
+   0.06591182560716326
+  ],
+  "source_data": "results/forced_horizon/*_instruct.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.instruct.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": 0.7500210955277571
+  },
+  "ci": [
+   -0.2787173675747618,
+   1.7474574921471002
+  ],
+  "source_data": "results/forced_horizon/[BC]_instruct.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.instruct.opb_conc_granted.D": {
+  "value": {
+   "coef": 5.6981936508245825
+  },
+  "ci": [
+   2.2841793479735673,
+   8.673086517107263
+  ],
+  "n": 840,
+  "source_data": "results/forced_horizon/D_instruct.jsonl",
+  "notes": "accepts=354; spans0=False",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.instruct.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 3.6462606847571206
+  },
+  "ci": [
+   2.518378235088056,
+   4.931512714712402
+  ],
+  "source_data": "results/forced_horizon/*_instruct.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.instruct.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": 1.6961252861946154
+  },
+  "ci": [
+   -5.137813702873169,
+   8.300724314461034
+  ],
+  "source_data": "results/forced_horizon/[BC]_instruct.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_base.opa_hold_rate.D": {
+  "value": {
+   "coef": -0.09584447781506066
+  },
+  "ci": [
+   -0.7914546631792946,
+   0.5063463989908694
+  ],
+  "n": 1215,
+  "source_data": "results/forced_horizon/D_z_base.jsonl",
+  "notes": "accepts=172; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_base.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -0.07927829910045095
+  },
+  "ci": [
+   -0.3711066462337765,
+   0.20842426104141418
+  ],
+  "source_data": "results/forced_horizon/*_z_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_base.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": 0.3091421999882238
+  },
+  "ci": [
+   -0.6326159180118107,
+   1.4259168373739048
+  ],
+  "source_data": "results/forced_horizon/[BC]_z_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_base.opb_conc_granted.D": {
+  "value": {
+   "coef": 0.6168508476537048
+  },
+  "ci": [
+   -1.1130323819260743,
+   2.3320050009058453
+  ],
+  "n": 1215,
+  "source_data": "results/forced_horizon/D_z_base.jsonl",
+  "notes": "accepts=172; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_base.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 0.9061715975503958
+  },
+  "ci": [
+   0.08186149072884803,
+   1.7531341922268042
+  ],
+  "source_data": "results/forced_horizon/*_z_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_base.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": -0.06870578769493285
+  },
+  "ci": [
+   -3.890827740367075,
+   3.821152453615278
+  ],
+  "source_data": "results/forced_horizon/[BC]_z_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_dpo.opa_hold_rate.D": {
+  "value": {
+   "coef": -2.8768733516340568
+  },
+  "ci": [
+   -4.155645596821621,
+   -1.9061301844052627
+  ],
+  "n": 1140,
+  "source_data": "results/forced_horizon/D_z_dpo.jsonl",
+  "notes": "accepts=287; spans0=False",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_dpo.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -2.5567114812397915
+  },
+  "ci": [
+   -3.1360022892509853,
+   -2.0560480543089694
+  ],
+  "source_data": "results/forced_horizon/*_z_dpo.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_dpo.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": -0.3156556075088892
+  },
+  "ci": [
+   -2.198779310549701,
+   2.734335046329323
+  ],
+  "source_data": "results/forced_horizon/[BC]_z_dpo.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_dpo.opb_conc_granted.D": {
+  "value": {
+   "coef": 8.472020394213338
+  },
+  "ci": [
+   5.614398726722264,
+   12.39691525908521
+  ],
+  "n": 1140,
+  "source_data": "results/forced_horizon/D_z_dpo.jsonl",
+  "notes": "accepts=287; spans0=False",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_dpo.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 9.613682466286859
+  },
+  "ci": [
+   7.471733355673824,
+   12.215403146236527
+  ],
+  "source_data": "results/forced_horizon/*_z_dpo.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.z_dpo.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": 14.115459327122947
+  },
+  "ci": [
+   7.700165499415299,
+   20.902717194397262
+  ],
+  "source_data": "results/forced_horizon/[BC]_z_dpo.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_base.opa_hold_rate.D": {
+  "value": {
+   "coef": 0.19435445125602274
+  },
+  "ci": [
+   -0.29716899286676385,
+   0.6685761760625469
+  ],
+  "n": 1150,
+  "source_data": "results/forced_horizon/D_t_base.jsonl",
+  "notes": "accepts=279; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_base.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": 0.11477673167810577
+  },
+  "ci": [
+   -0.1240371679871507,
+   0.34225506196349054
+  ],
+  "source_data": "results/forced_horizon/*_t_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_base.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": 0.044654792789820076
+  },
+  "ci": [
+   -0.8118161930943874,
+   0.8492012269944733
+  ],
+  "source_data": "results/forced_horizon/[BC]_t_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_base.opb_conc_granted.D": {
+  "value": {
+   "coef": -0.41578019776434255
+  },
+  "ci": [
+   -2.3647866524926173,
+   1.5212168729848523
+  ],
+  "n": 1150,
+  "source_data": "results/forced_horizon/D_t_base.jsonl",
+  "notes": "accepts=279; spans0=True",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_base.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 0.15866256001154147
+  },
+  "ci": [
+   -0.6737024213705616,
+   0.9796575106242419
+  ],
+  "source_data": "results/forced_horizon/*_t_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_base.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": -0.938896783425816
+  },
+  "ci": [
+   -5.271581145667455,
+   3.6625241920665523
+  ],
+  "source_data": "results/forced_horizon/[BC]_t_base.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_rlvr.opa_hold_rate.D": {
+  "value": {
+   "coef": -0.7859413446128038
+  },
+  "ci": [
+   -1.5634273816709878,
+   -0.1014763407157844
+  ],
+  "n": 1499,
+  "source_data": "results/forced_horizon/D_t_rlvr.jsonl",
+  "notes": "accepts=222; spans0=False",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_rlvr.opa_hold_rate.pooledFE": {
+  "value": {
+   "coef": -0.2434155411629918
+  },
+  "ci": [
+   -0.575136980362504,
+   0.08196156483248895
+  ],
+  "source_data": "results/forced_horizon/*_t_rlvr.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_rlvr.opa_hold_rate.BvsC": {
+  "value": {
+   "diff": -1.8718804959123476
+  },
+  "ci": [
+   -2.9545642124153804,
+   -0.7397940636951237
+  ],
+  "source_data": "results/forced_horizon/[BC]_t_rlvr.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_rlvr.opb_conc_granted.D": {
+  "value": {
+   "coef": 3.259360652186291
+  },
+  "ci": [
+   1.0309370150363544,
+   5.6977824482095345
+  ],
+  "n": 1499,
+  "source_data": "results/forced_horizon/D_t_rlvr.jsonl",
+  "notes": "accepts=222; spans0=False",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_rlvr.opb_conc_granted.pooledFE": {
+  "value": {
+   "coef": 1.5393292756261099
+  },
+  "ci": [
+   0.5185667544031373,
+   2.557232439448245
+  ],
+  "source_data": "results/forced_horizon/*_t_rlvr.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.fh.t_rlvr.opb_conc_granted.BvsC": {
+  "value": {
+   "diff": 3.3110656555843603
+  },
+  "ci": [
+   -0.45561028592089103,
+   6.809804318742666
+  ],
+  "source_data": "results/forced_horizon/[BC]_t_rlvr.jsonl",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.displacement.seller": {
+  "value": {
+   "opa_hold_rate": {
+    "OLMo": {
+     "delta": -0.2692642008183787,
+     "ci": [
+      -2.2573775231995015,
+      4.355401449178407
+     ]
+    },
+    "Zephyr": {
+     "delta": -5.266001479382116,
+     "ci": [
+      -24.21954579762807,
+      -1.9297926603075135
+     ]
+    },
+    "Tulu": {
+     "delta": 0.10942562861328109,
+     "ci": [
+      -1.7628192723233993,
+      1.616937273581113
+     ]
+    }
+   },
+   "opb_conc_granted": {
+    "OLMo": {
+     "delta": 2.348788394666522,
+     "ci": [
+      -8.898867886973141,
+      16.07380357816395
+     ]
+    },
+    "Zephyr": {
+     "delta": 4.729921102462757,
+     "ci": [
+      -10.554279803449843,
+      28.021037264044843
+     ]
+    },
+    "Tulu": {
+     "delta": -2.0714528950118782,
+     "ci": [
+      -9.666520993563411,
+      6.047339873595758
+     ]
+    }
+   }
+  },
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.displacement.fh": {
+  "value": {
+   "opa_hold_rate": {
+    "OLMo": {
+     "delta": -0.42050768803675503,
+     "ci": [
+      -1.0576910870828646,
+      0.2589855713983171
+     ]
+    },
+    "Zephyr": {
+     "delta": -2.7810288738189963,
+     "ci": [
+      -4.199284648757862,
+      -1.6436942483379609
+     ]
+    },
+    "Tulu": {
+     "delta": -0.9802957958688265,
+     "ci": [
+      -1.8624867116001833,
+      -0.20290839179840875
+     ]
+    }
+   },
+   "opb_conc_granted": {
+    "OLMo": {
+     "delta": 6.4796531133741775,
+     "ci": [
+      2.866518278537333,
+      9.907016010260525
+     ]
+    },
+    "Zephyr": {
+     "delta": 7.855169546559633,
+     "ci": [
+      4.591515790083809,
+      11.85863264364329
+     ]
+    },
+    "Tulu": {
+     "delta": 3.6751408499506333,
+     "ci": [
+      0.5509255719431145,
+      6.959542207071809
+     ]
+    }
+   }
+  },
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.value_share": {
+  "value": {
+   "natural_oracle_minus_flat": 3.2389162561576352,
+   "forced_oracle_minus_flat": 4.317733990147783
+  },
+  "source_script": "sellerD_adaptation_value.py",
+  "source_data": "out/sellerD_adaptation_value.json",
+  "notes": "3.2-4.3 pt opponent-modeling/accept-timing value share (oracle-flat)",
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing.verdict": {
+  "value": "adaptation",
+  "firing_cells": {
+   "seller": [
+    "z_dpo.opa_hold_rate.D"
+   ],
+   "fh": [
+    "instruct.opb_conc_granted.D",
+    "z_dpo.opa_hold_rate.D",
+    "z_dpo.opb_conc_granted.D",
+    "t_rlvr.opa_hold_rate.D",
+    "t_rlvr.opb_conc_granted.D"
+   ]
+  },
+  "notes": "null iff every per-ckpt hardness CI vs seller D spans 0 under both ops, both horizons",
+  "source_script": "analysis/revision/t1_accept_timing.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c"
+ },
+ "accept_timing_value.forced_k4.base.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.0,
+   "delta_at_ci_lo": 1.3620689655172413,
+   "delta_at_ci_hi": -0.0024630541871921707,
+   "at_adapt": 0.31134020934344236,
+   "b_room": -0.7731009947931875
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.base.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.0,
+   "delta_at_ci_lo": 0.9704433497536946,
+   "delta_at_ci_hi": -0.059113300492610876,
+   "at_adapt": -2.2019224275680895,
+   "b_room": -0.9622711680516765
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.z_base.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.07635467980295552,
+   "delta_at_ci_lo": 0.9113300492610836,
+   "delta_at_ci_hi": -1.017241379310345,
+   "at_adapt": -0.1499721598606255,
+   "b_room": 2.2444129486230837
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.z_base.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -0.4827586206896548,
+   "delta_at_ci_lo": 1.660098522167488,
+   "delta_at_ci_hi": -1.8275862068965516,
+   "at_adapt": 1.2483788420723336,
+   "b_room": 2.391718422680596
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.t_base.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.0,
+   "delta_at_ci_lo": 0.009852216748768239,
+   "delta_at_ci_hi": -0.32019704433497553,
+   "at_adapt": 0.41943764432065506,
+   "b_room": 0.9328029411768233
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.t_base.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.061576354679802936,
+   "delta_at_ci_lo": 0.061576354679802936,
+   "delta_at_ci_hi": -0.5812807881773399,
+   "at_adapt": -0.876873927056102,
+   "b_room": 0.9062998399825478
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.instruct.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.1108374384236459,
+   "delta_at_ci_lo": 0.2512315270935961,
+   "delta_at_ci_hi": -0.02463054187192082,
+   "at_adapt": -0.2949125558632546,
+   "b_room": -1.5167355980014483
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.instruct.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -0.3103448275862073,
+   "delta_at_ci_lo": -0.21182266009852224,
+   "delta_at_ci_hi": -0.3103448275862073,
+   "at_adapt": 5.189288084469525,
+   "b_room": -1.2577714465395307
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.z_dpo.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.1724137931034484,
+   "delta_at_ci_lo": 0.24876847290640436,
+   "delta_at_ci_hi": 0.09605911330049288,
+   "at_adapt": -0.5497338842984434,
+   "b_room": -4.6091718593496696
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.z_dpo.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -0.3423645320197042,
+   "delta_at_ci_lo": -0.2413793103448274,
+   "delta_at_ci_hi": -0.43103448275862055,
+   "at_adapt": 1.7617733085317695,
+   "b_room": -5.6210457443271995
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.t_rlvr.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.19458128078817727,
+   "delta_at_ci_lo": 0.5837438423645318,
+   "delta_at_ci_hi": 0.01724137931034475,
+   "at_adapt": -0.24615321116487557,
+   "b_room": -4.5197479133340055
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.forced_k4.t_rlvr.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -2.0246305418719213,
+   "delta_at_ci_lo": -0.8768472906403941,
+   "delta_at_ci_hi": -2.4507389162561575,
+   "at_adapt": 1.241950690339641,
+   "b_room": -3.6348196733859264
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.base.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.014778325123152705,
+   "delta_at_ci_lo": 2.706896551724138,
+   "delta_at_ci_hi": -0.9014778325123153,
+   "at_adapt": NaN,
+   "b_room": 3.807102957704355
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.base.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -1.9458128078817734,
+   "delta_at_ci_lo": 4.391625615763547,
+   "delta_at_ci_hi": -4.307881773399014,
+   "at_adapt": NaN,
+   "b_room": 4.109755775391315
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.z_base.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -0.9778325123152705,
+   "delta_at_ci_lo": 2.6699507389162562,
+   "delta_at_ci_hi": -3.0837438423645316,
+   "at_adapt": 0.2679168957786647,
+   "b_room": -1.956439846129104
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.z_base.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -1.874384236453202,
+   "delta_at_ci_lo": 5.224137931034482,
+   "delta_at_ci_hi": -6.416256157635468,
+   "at_adapt": 0.9152657996193566,
+   "b_room": -2.2143021158207827
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.t_base.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -0.014778325123152705,
+   "delta_at_ci_lo": 0.15024630541871922,
+   "delta_at_ci_hi": -0.6280788177339902,
+   "at_adapt": 0.5265161468380427,
+   "b_room": -0.9302261414920554
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.t_base.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.0,
+   "delta_at_ci_lo": 1.620689655172414,
+   "delta_at_ci_hi": -2.1502463054187193,
+   "at_adapt": -0.9988745766437875,
+   "b_room": -0.8827822927701572
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.instruct.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.14039408866995018,
+   "delta_at_ci_lo": 0.4827586206896548,
+   "delta_at_ci_hi": 0.0,
+   "at_adapt": -0.7567304704787183,
+   "b_room": -0.06316638302174647
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.instruct.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -1.2266009852216748,
+   "delta_at_ci_lo": 0.21921182266009875,
+   "delta_at_ci_hi": -1.2266009852216748,
+   "at_adapt": 15.637942449174314,
+   "b_room": 0.19846240556699754
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.z_dpo.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 0.15763546798029537,
+   "delta_at_ci_lo": 1.4310344827586206,
+   "delta_at_ci_hi": 0.009852216748768239,
+   "at_adapt": -2.1223353377168017,
+   "b_room": 4.777928222933237
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.z_dpo.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -0.032019704433497775,
+   "delta_at_ci_lo": 0.059113300492610765,
+   "delta_at_ci_hi": -0.05665024630541904,
+   "at_adapt": 1.1714783641504307,
+   "b_room": 3.7731785188795923
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.t_rlvr.opa_hold_rate": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": -0.11822660098522153,
+   "delta_at_ci_lo": 1.4581280788177349,
+   "delta_at_ci_hi": -1.054187192118226,
+   "at_adapt": 0.3044405664488953,
+   "b_room": -2.1310387147882683
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.natural_T8.t_rlvr.opb_conc_granted": {
+  "value": {
+   "alignment": "null_gradient",
+   "surplus_delta": 1.598522167487685,
+   "delta_at_ci_lo": 4.460591133004926,
+   "delta_at_ci_hi": -1.625615763546798,
+   "at_adapt": -1.5413481820303652,
+   "b_room": -2.5417554022713476
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.d_gradient": {
+  "value": {
+   "forced_k4.opa_hold_rate": {
+    "sign": "zero",
+    "argmax_at_adapt": -1.5,
+    "local_grad": 0.0,
+    "at0star": 0.45,
+    "s_blind": 10.204433497536947
+   },
+   "forced_k4.opb_conc_granted": {
+    "sign": "zero",
+    "argmax_at_adapt": 0.0,
+    "local_grad": 0.0024630541871921707,
+    "at0star": 0.45,
+    "s_blind": 10.204433497536947
+   },
+   "natural_T8.opa_hold_rate": {
+    "sign": "zero",
+    "argmax_at_adapt": -1.5,
+    "local_grad": 0.0,
+    "at0star": 0.0,
+    "s_blind": 10.51231527093596
+   },
+   "natural_T8.opb_conc_granted": {
+    "sign": "zero",
+    "argmax_at_adapt": -1.5,
+    "local_grad": 0.0,
+    "at0star": 0.0,
+    "s_blind": 10.51231527093596
+   }
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.anchor": {
+  "value": {
+   "c_star": 0.07,
+   "oracle_flat_natural": 3.2389162561576352,
+   "oracle_flat_k4": 4.317733990147783
+  },
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ },
+ "accept_timing_value.verdict": {
+  "value": "indeterminate",
+  "reason": "D accept-timing gradient is null on both ops (accept-timing has no best-response value vs D) ",
+  "powered_reliable_final_cells": [
+   [
+    "instruct",
+    "opb_conc_granted",
+    "null_gradient",
+    -0.3103
+   ],
+   [
+    "z_dpo",
+    "opa_hold_rate",
+    "null_gradient",
+    0.1724
+   ],
+   [
+    "z_dpo",
+    "opb_conc_granted",
+    "null_gradient",
+    -0.3424
+   ],
+   [
+    "t_rlvr",
+    "opa_hold_rate",
+    "null_gradient",
+    0.1946
+   ],
+   [
+    "t_rlvr",
+    "opb_conc_granted",
+    "null_gradient",
+    -2.0246
+   ]
+  ],
+  "max_surplus_gain_pts": 0.19458128078817727,
+  "min_surplus_gain_pts": -2.0246305418719213,
+  "d_gradient_signs_k4": {
+   "opa_hold_rate": "zero",
+   "opb_conc_granted": "zero"
+  },
+  "d_gradient_gain_k4": {
+   "opa_hold_rate": 0.0,
+   "opb_conc_granted": 0.0
+  },
+  "sanity_ceiling_ok": true,
+  "source_script": "analysis/revision/t12_accept_timing_value.py",
+  "seed": 1234,
+  "repo_fingerprint": "ccf716193f90165c782a9c6209719d2c41821115086c99a5f0c9ef39ad6ecb5c",
+  "source_data": "runs/seller_exp, results/forced_horizon, out/sellerD_adaptation_value.json, revision_numbers.json"
+ }
+}

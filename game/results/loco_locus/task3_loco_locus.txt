@@ -1,0 +1,108 @@
+TASK 3 — LOCO + Euclidean locus robustness (NBOOT=2000; OLMo N=500, Zephyr/Tulu N=2000)
+
+variant                      family   locus step             locus pos    CI-sep 
+---------------------------------------------------------------------------------
+FULL-5 Mahalanobis           OLMo     base->sft              supervised   yes    
+FULL-5 Mahalanobis           Zephyr   z_sft->z_dpo           preference   yes    
+FULL-5 Mahalanobis           Tulu     t_sft->t_dpo           preference   yes    
+
+LOCO drop opening_aggressiveness OLMo     base->sft              supervised   yes    
+LOCO drop opening_aggressiveness Zephyr   z_sft->z_dpo           preference   yes    
+LOCO drop opening_aggressiveness Tulu     t_sft->t_dpo           preference   yes    
+
+LOCO drop surplus_efficiency OLMo     base->sft              supervised   yes    
+LOCO drop surplus_efficiency Zephyr   z_sft->z_dpo           preference   NO     
+LOCO drop surplus_efficiency Tulu     t_sft->t_dpo           preference   yes    
+
+LOCO drop haggling           OLMo     base->sft              supervised   NO     
+LOCO drop haggling           Zephyr   z_sft->z_dpo           preference   yes    
+LOCO drop haggling           Tulu     t_sft->t_dpo           preference   yes    
+
+LOCO drop walkaway           OLMo     base->sft              supervised   yes    
+LOCO drop walkaway           Zephyr   z_sft->z_dpo           preference   NO     
+LOCO drop walkaway           Tulu     t_sft->t_dpo           preference   yes    
+
+LOCO drop aggression_penalty OLMo     base->sft              supervised   yes    
+LOCO drop aggression_penalty Zephyr   z_sft->z_dpo           preference   yes    
+LOCO drop aggression_penalty Tulu     t_sft->t_dpo           preference   yes    
+
+Euclidean FULL-5             OLMo     base->sft              supervised   yes    
+Euclidean FULL-5             Zephyr   z_sft->z_dpo           preference   NO     
+Euclidean FULL-5             Tulu     t_sft->t_dpo           preference   yes    
+
+
+FULL-PRECISION per-step D_fam [lo, hi] (every variant):
+
+[FULL-5 Mahalanobis]
+  OLMo     base->sft              D=1.1102498581128342 [0.9893103785924997, 1.260316119473357]
+  OLMo     sft->dpo               D=0.701179898380343 [0.6061976442420558, 0.8286966855654516]
+  OLMo     dpo->instruct          D=0.09649068610656157 [0.05770672371394275, 0.16380657841603616]
+  Zephyr   z_base->z_sft          D=0.41835332535710595 [0.35648802791783074, 0.4900711590456389]
+  Zephyr   z_sft->z_dpo           D=0.5860146452806315 [0.5323868921402278, 0.6483337970910572]
+  Tulu     t_base->t_sft          D=0.8191784923696244 [0.7610459936102952, 0.8833763331130455]
+  Tulu     t_sft->t_dpo           D=1.3276747708333885 [1.273685744634521, 1.3856149734016066]
+  Tulu     t_dpo->t_rlvr          D=0.16044430023571488 [0.13694418899312052, 0.1939660117776551]
+
+[LOCO drop opening_aggressiveness]
+  OLMo     base->sft              D=0.9836002138542129 [0.8836816166325473, 1.107099546095216]
+  OLMo     sft->dpo               D=0.6949043110440809 [0.5967871535328897, 0.8186147835295579]
+  OLMo     dpo->instruct          D=0.08042779573659105 [0.040064087195441134, 0.14887566530656268]
+  Zephyr   z_base->z_sft          D=0.3399540820587191 [0.28573432074590227, 0.40458460247551375]
+  Zephyr   z_sft->z_dpo           D=0.5538283992388772 [0.49846357359316856, 0.6124719599288708]
+  Tulu     t_base->t_sft          D=0.7452812849869769 [0.6878178565683688, 0.8062973745406948]
+  Tulu     t_sft->t_dpo           D=1.310137055133082 [1.2553937888033548, 1.3681698573414411]
+  Tulu     t_dpo->t_rlvr          D=0.10248883901958876 [0.08207911640478828, 0.1294042945271422]
+
+[LOCO drop surplus_efficiency]
+  OLMo     base->sft              D=0.9469538674484524 [0.8392308218890121, 1.0864978648032309]
+  OLMo     sft->dpo               D=0.6241076844864862 [0.526044679429219, 0.7554631229527026]
+  OLMo     dpo->instruct          D=0.09422930224080059 [0.05010084037594369, 0.16183194675346255]
+  Zephyr   z_base->z_sft          D=0.4070047975197848 [0.3407503061697888, 0.4795478429184459]
+  Zephyr   z_sft->z_dpo           D=0.43796286060007233 [0.37581657482193315, 0.5035288232023732]
+  Tulu     t_base->t_sft          D=0.7995413546772104 [0.7403996950722448, 0.8662004472888601]
+  Tulu     t_sft->t_dpo           D=1.1451169196490192 [1.095416112877102, 1.1968210040861913]
+  Tulu     t_dpo->t_rlvr          D=0.1558387725700439 [0.13040581908819884, 0.18943620003050052]
+
+[LOCO drop haggling]
+  OLMo     base->sft              D=0.8285207113641435 [0.7214594476145314, 0.9741208079734462]
+  OLMo     sft->dpo               D=0.6184611552242333 [0.5236383728177886, 0.7459264240713576]
+  OLMo     dpo->instruct          D=0.09623514268139188 [0.0545287814201371, 0.16149218269916402]
+  Zephyr   z_base->z_sft          D=0.3998006562406233 [0.3316594631480432, 0.4743420576971567]
+  Zephyr   z_sft->z_dpo           D=0.5751673732653181 [0.5206990549326446, 0.6362004043980127]
+  Tulu     t_base->t_sft          D=0.651457213779345 [0.5942066107222157, 0.7144573779097477]
+  Tulu     t_sft->t_dpo           D=1.0731446851665165 [1.0138486201100194, 1.136805309361633]
+  Tulu     t_dpo->t_rlvr          D=0.1594664014109001 [0.13612413279435104, 0.19022540502084095]
+
+[LOCO drop walkaway]
+  OLMo     base->sft              D=1.0346488246317578 [0.8959056062618316, 1.194469168155329]
+  OLMo     sft->dpo               D=0.5374210718654553 [0.4391688730680789, 0.6596749462971779]
+  OLMo     dpo->instruct          D=0.07053294943921287 [0.045049631257819585, 0.11478291582987639]
+  Zephyr   z_base->z_sft          D=0.41481093845417727 [0.3521036862068535, 0.4848247001843986]
+  Zephyr   z_sft->z_dpo           D=0.5400849363305135 [0.4840970139876213, 0.6028197720012247]
+  Tulu     t_base->t_sft          D=0.7638208333176615 [0.7041875860794625, 0.827944787706087]
+  Tulu     t_sft->t_dpo           D=1.2736692840938333 [1.2203180322526404, 1.3326414888936529]
+  Tulu     t_dpo->t_rlvr          D=0.15739040754061615 [0.13241008951548838, 0.19004575232524354]
+
+[LOCO drop aggression_penalty]
+  OLMo     base->sft              D=1.0974082136517311 [0.9672107758521192, 1.2540468519099877]
+  OLMo     sft->dpo               D=0.6019880260421491 [0.5143991821804803, 0.7148354394060417]
+  OLMo     dpo->instruct          D=0.09648418917718593 [0.05587016274930654, 0.16241199549554017]
+  Zephyr   z_base->z_sft          D=0.41749438021733415 [0.35492934713350643, 0.48911194462635443]
+  Zephyr   z_sft->z_dpo           D=0.5859943182606644 [0.531880187126579, 0.6478067138987874]
+  Tulu     t_base->t_sft          D=0.8186091431129159 [0.7594177618788569, 0.8821822398168627]
+  Tulu     t_sft->t_dpo           D=1.322974376259842 [1.2673085881317605, 1.381283934858546]
+  Tulu     t_dpo->t_rlvr          D=0.15716353599760605 [0.1325454487450745, 0.18942470922266794]
+
+[Euclidean FULL-5]
+  OLMo     base->sft              D=1.084570478645342 [0.975891360948342, 1.2254977938696243]
+  OLMo     sft->dpo               D=0.6631550480493713 [0.5761396473930567, 0.7826653361557323]
+  OLMo     dpo->instruct          D=0.10755279386918923 [0.06229962993652326, 0.17827678476318046]
+  Zephyr   z_base->z_sft          D=0.5168733545751146 [0.4384849615572244, 0.6034877390079737]
+  Zephyr   z_sft->z_dpo           D=0.632902979284197 [0.5723091325310935, 0.6995723479884461]
+  Tulu     t_base->t_sft          D=0.9138462687894948 [0.8459741926269605, 0.9864826352717518]
+  Tulu     t_sft->t_dpo           D=1.4755193712667416 [1.415308991480699, 1.5405340562242418]
+  Tulu     t_dpo->t_rlvr          D=0.18245349336693084 [0.15537399209230934, 0.2154118521217184]
+
+======================================================================
+INVARIANCE VERDICT (expected: OLMo=supervised, Zephyr/Tulu=preference)
+  INVARIANT — locus ordering preserved across ALL LOCO variants and Euclidean.

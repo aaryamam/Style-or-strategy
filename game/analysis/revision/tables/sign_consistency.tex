@@ -1,0 +1,32 @@
+% T6 sign-consistency across turn sets: forced-horizon beta(D)
+\begin{tabular}{lll rr r}
+\toprule
+model & op & set & \multicolumn{1}{c}{$\beta(D)$} & \multicolumn{1}{c}{95\% CI} & sign \\
+\midrule
+OLMo & a & all-constrained & 0.181 & [0.111, 0.238] & + \\
+OLMo & a & excl-override & 0.175 & [0.095, 0.240] & + \\
+OLMo & a & free-parsed$^{\dagger}$ & 0.126 & [0.057, 0.198] & + \\
+\addlinespace
+OLMo & b & all-constrained & -0.980 & [-1.133, -0.820] & $-$ \\
+OLMo & b & excl-override & -0.976 & [-1.149, -0.809] & $-$ \\
+OLMo & b & free-parsed$^{\dagger}$ & -0.719 & [-0.903, -0.525] & $-$ \\
+\addlinespace
+Mistral & a & all-constrained & 0.130 & [0.033, 0.223] & + \\
+Mistral & a & excl-override & 0.148 & [0.054, 0.242] & + \\
+Mistral & a & free-parsed$^{\dagger}$ & 0.213 & [0.118, 0.312] & + \\
+\addlinespace
+Mistral & b & all-constrained & -0.915 & [-1.210, -0.624] & $-$ \\
+Mistral & b & excl-override & -0.893 & [-1.192, -0.594] & $-$ \\
+Mistral & b & free-parsed$^{\dagger}$ & -1.082 & [-1.277, -0.881] & $-$ \\
+\addlinespace
+Llama & a & all-constrained & 0.078 & [0.012, 0.146] & + \\
+Llama & a & excl-override & 0.073 & [-0.001, 0.147] & + \\
+Llama & a & free-parsed$^{\dagger}$ & 0.095 & [-0.006, 0.194] & + \\
+\addlinespace
+Llama & b & all-constrained & -0.606 & [-0.835, -0.343] & $-$ \\
+Llama & b & excl-override & -0.609 & [-0.857, -0.329] & $-$ \\
+Llama & b & free-parsed$^{\dagger}$ & -0.739 & [-1.022, -0.432] & $-$ \\
+\addlinespace
+\bottomrule
+\end{tabular}
+% $^{\dagger}$ free-parsed column carries Defect-B selection bias.

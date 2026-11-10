@@ -1,0 +1,21 @@
+{
+ "_note": "Within-episode concession-adaptation metric (pure re-analysis of runs/seller_exp). beta = slope of buyer per-turn concession on revealed seller hardness; controls turn+room; bootstrap over episodes.",
+ "effective_N_obs": {
+  "well_powered": [
+   "t_base",
+   "t_rlvr",
+   "all C cells"
+  ],
+  "underpowered": [
+   "OLMo-Instruct (13-87 obs, mostly t=2)",
+   "z_dpo (1 obs/episode, t=2 only)",
+   "all B cells (13-56 obs)"
+  ]
+ },
+ "contrast2_betaD": "NULL for all 6 checkpoints, both operationalizations (every beta(D) CI includes 0) \u2014 no opponent-contingent concession against the adaptive seller",
+ "contrast1_crossseller_CmB": "absent except 2 weak op-(a)-only cells in Zephyr family (z_base +0.837 driven by low-N B; z_dpo -0.143 small); not replicated in op-(b)",
+ "individual_betas": "marginal, mixed-sign, split between adaptive and anti-adaptive directions -> consistent with noise",
+ "posttraining": "op-(b) beta shifts positive across families (suggestive) but rests on noisy estimates; not significant against D",
+ "verdict": "MIXED / UNDERPOWERED, leaning STYLE-CONSISTENT. Decisive beta(D) null everywhere; cross-seller differences weak/non-replicating; OLMo-Instruct and z_dpo too starved (<=2 offers) for an airtight per-checkpoint test.",
+ "licensed_claim": "Opening-anchor null stands (well-powered). Concession trajectory shows no robust opponent-contingent adaptation (beta(D)~0 all checkpoints). STYLE-DOMINATED supported, not made airtight; airtightness limited by <=2-offer resolution in OLMo/Zephyr finals."
+}

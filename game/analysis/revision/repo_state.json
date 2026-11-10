@@ -1,0 +1,492 @@
+{
+ "git": null,
+ "git_note": "not a git repo; content-hash fingerprint used",
+ "source_sha256": {
+  "signature.py": "4856ee524bf91863c20d93ebf57bd11561c6fcec6fc730c736c039461cc363c9",
+  "study.py": "434bd0ff9f41e0124d0cc29171ccdfe2e18e32d2d149c7d2662122fc64eccf8b",
+  "seller_exp.py": "a245e4f5e73894201d139d9dce9fe19eaea8bfe919d6b4d2336ccfd5c68d2b52",
+  "game_lib.py": "e15c43599a9270705754ba258ba9ebf74d44d775b3a4a57cb6c5c5ce5947e893",
+  "metric_concession.py": "5595ee95f03390a11ef5a9cdf160ad0bcbfd8e8ebe7edc943fea5a1cb91ba117",
+  "policy_shift.py": "0c7c3d066026e64e3713d378686033d9bb6744c83cf9abe4eebdded82104bb0b",
+  "freepass.py": "320fb1da6b196d16a9430b31e703126e9c8ad713b4d0b551ae033ba521e9262b",
+  "fh_analyze.py": "ed92799326e11eab676206f5bf53e8f67c8c9eb16e9611cc16f9991e7e77c544",
+  "b_analyze.py": "24c74c1bdca1897ef82361f5a3c5c619522e1f35c1c6e389254129d76a87ad3c",
+  "zephyr_gates.py": "b2edf1ac794e7518d4d7587a50e38fc02159e8b9a77989fa273c2a829988ab15",
+  "loco_locus.py": "e8da18401c4b04ab56098239281fbffffc9314b4cf479958cc2145fa74925ad8",
+  "sellerD_adaptation_value.py": "882960f7435cddb8facde7dbd97b4446dceeb75081d21cfe8e7753fad6e09ec7"
+ },
+ "source_combined_sha256": "b8a3fe644566eec241be1525cebc363c60f87e020a291e08a21350a80a164c58",
+ "n_data_files": 94,
+ "data_manifest": [
+  {
+   "path": "runs/n500/constrained_base.jsonl",
+   "size": 312391,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/constrained_dpo.jsonl",
+   "size": 302064,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/constrained_instruct.jsonl",
+   "size": 303009,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/constrained_sft.jsonl",
+   "size": 268430,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/constrained_t_base.jsonl",
+   "size": 359694,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/constrained_t_rlvr.jsonl",
+   "size": 513228,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/constrained_z_base.jsonl",
+   "size": 332151,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/constrained_z_dpo.jsonl",
+   "size": 316372,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/constrained_z_sft.jsonl",
+   "size": 303858,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/passA_base.jsonl",
+   "size": 457859,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/passA_dpo.jsonl",
+   "size": 250393,
+   "mtime": 1783638000
+  },
+  {
+   "path": "runs/n500/passA_instruct.jsonl",
+   "size": 250797,
+   "mtime": 1783638000
+  },
+  {
+   "path": "runs/n500/passA_sft.jsonl",
+   "size": 222374,
+   "mtime": 1783638000
+  },
+  {
+   "path": "runs/n500/passA_t_base.jsonl",
+   "size": 339931,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/passA_t_rlvr.jsonl",
+   "size": 430179,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/passA_z_base.jsonl",
+   "size": 331052,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/passA_z_dpo.jsonl",
+   "size": 330246,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n500/passA_z_sft.jsonl",
+   "size": 268768,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/n2000/constrained_t_base.jsonl",
+   "size": 1460197,
+   "mtime": 1783638004
+  },
+  {
+   "path": "runs/n2000/constrained_t_dpo.jsonl",
+   "size": 2036417,
+   "mtime": 1783638005
+  },
+  {
+   "path": "runs/n2000/constrained_t_rlvr.jsonl",
+   "size": 2068769,
+   "mtime": 1783638005
+  },
+  {
+   "path": "runs/n2000/constrained_t_sft.jsonl",
+   "size": 1405486,
+   "mtime": 1783638004
+  },
+  {
+   "path": "runs/n2000/constrained_z_base.jsonl",
+   "size": 1351068,
+   "mtime": 1783638004
+  },
+  {
+   "path": "runs/n2000/constrained_z_dpo.jsonl",
+   "size": 1273894,
+   "mtime": 1783638004
+  },
+  {
+   "path": "runs/n2000/constrained_z_sft.jsonl",
+   "size": 1210663,
+   "mtime": 1783638004
+  },
+  {
+   "path": "runs/seller_exp/A_base.jsonl",
+   "size": 280675,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/A_instruct.jsonl",
+   "size": 271045,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/A_t_base.jsonl",
+   "size": 318389,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/A_t_rlvr.jsonl",
+   "size": 453211,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/A_z_base.jsonl",
+   "size": 299088,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/A_z_dpo.jsonl",
+   "size": 282502,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/B_base.jsonl",
+   "size": 270321,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/B_instruct.jsonl",
+   "size": 261233,
+   "mtime": 1783638000
+  },
+  {
+   "path": "runs/seller_exp/B_t_base.jsonl",
+   "size": 301754,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/B_t_rlvr.jsonl",
+   "size": 421856,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/B_z_base.jsonl",
+   "size": 283240,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/B_z_dpo.jsonl",
+   "size": 275110,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/C_base.jsonl",
+   "size": 393584,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/C_instruct.jsonl",
+   "size": 322426,
+   "mtime": 1783638002
+  },
+  {
+   "path": "runs/seller_exp/C_t_base.jsonl",
+   "size": 396437,
+   "mtime": 1783638002
+  },
+  {
+   "path": "runs/seller_exp/C_t_rlvr.jsonl",
+   "size": 570013,
+   "mtime": 1783638003
+  },
+  {
+   "path": "runs/seller_exp/C_z_base.jsonl",
+   "size": 400894,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/C_z_dpo.jsonl",
+   "size": 365431,
+   "mtime": 1783638002
+  },
+  {
+   "path": "runs/seller_exp/D_base.jsonl",
+   "size": 282409,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/D_instruct.jsonl",
+   "size": 271531,
+   "mtime": 1783638001
+  },
+  {
+   "path": "runs/seller_exp/D_t_base.jsonl",
+   "size": 320860,
+   "mtime": 1783638002
+  },
+  {
+   "path": "runs/seller_exp/D_t_rlvr.jsonl",
+   "size": 442511,
+   "mtime": 1783638002
+  },
+  {
+   "path": "runs/seller_exp/D_z_base.jsonl",
+   "size": 299270,
+   "mtime": 1783638002
+  },
+  {
+   "path": "runs/seller_exp/D_z_dpo.jsonl",
+   "size": 282735,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/forced_horizon/A_base.jsonl",
+   "size": 483730,
+   "mtime": 1783638000
+  },
+  {
+   "path": "results/forced_horizon/A_instruct.jsonl",
+   "size": 332207,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/A_t_base.jsonl",
+   "size": 420810,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/A_t_rlvr.jsonl",
+   "size": 554687,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/forced_horizon/A_z_base.jsonl",
+   "size": 446398,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/A_z_dpo.jsonl",
+   "size": 402925,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/B_base.jsonl",
+   "size": 481182,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/B_instruct.jsonl",
+   "size": 328301,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/B_t_base.jsonl",
+   "size": 417055,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/B_t_rlvr.jsonl",
+   "size": 533965,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/forced_horizon/B_z_base.jsonl",
+   "size": 436921,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/B_z_dpo.jsonl",
+   "size": 398699,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/C_base.jsonl",
+   "size": 500711,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/C_instruct.jsonl",
+   "size": 333822,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/C_t_base.jsonl",
+   "size": 426534,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/C_t_rlvr.jsonl",
+   "size": 589204,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/forced_horizon/C_z_base.jsonl",
+   "size": 467524,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/C_z_dpo.jsonl",
+   "size": 402796,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/D_base.jsonl",
+   "size": 487971,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/D_instruct.jsonl",
+   "size": 331508,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/D_t_base.jsonl",
+   "size": 419645,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/D_t_rlvr.jsonl",
+   "size": 536604,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/forced_horizon/D_z_base.jsonl",
+   "size": 449425,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/forced_horizon/D_z_dpo.jsonl",
+   "size": 402885,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/base_artifact/free_B_base.jsonl",
+   "size": 702753,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/base_artifact/free_B_t_base.jsonl",
+   "size": 499547,
+   "mtime": 1783638000
+  },
+  {
+   "path": "results/base_artifact/free_B_z_base.jsonl",
+   "size": 573299,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/base_artifact/free_C_base.jsonl",
+   "size": 803969,
+   "mtime": 1783638003
+  },
+  {
+   "path": "results/base_artifact/free_C_t_base.jsonl",
+   "size": 572058,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/base_artifact/free_C_z_base.jsonl",
+   "size": 634123,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/base_artifact/free_D_base.jsonl",
+   "size": 743796,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/base_artifact/free_D_t_base.jsonl",
+   "size": 525814,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/base_artifact/free_D_z_base.jsonl",
+   "size": 580346,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/realized_robust/probe_olmo_base_own_seed1234.jsonl",
+   "size": 989285,
+   "mtime": 1783638004
+  },
+  {
+   "path": "results/realized_robust/probe_olmo_base_seed1234.jsonl",
+   "size": 1302443,
+   "mtime": 1783638004
+  },
+  {
+   "path": "results/realized_robust/probe_olmo_base_seed777.jsonl",
+   "size": 1294490,
+   "mtime": 1783638004
+  },
+  {
+   "path": "results/realized_robust/probe_t_rlvr_own_seed1234.jsonl",
+   "size": 1493295,
+   "mtime": 1783638004
+  },
+  {
+   "path": "results/realized_robust/probe_t_rlvr_seed1234.jsonl",
+   "size": 1280429,
+   "mtime": 1783638004
+  },
+  {
+   "path": "results/realized_robust/probe_t_rlvr_seed777.jsonl",
+   "size": 1272692,
+   "mtime": 1783638004
+  },
+  {
+   "path": "results/realized_probe/realized_olmo_base.jsonl",
+   "size": 911259,
+   "mtime": 1783638004
+  },
+  {
+   "path": "results/realized_probe/realized_olmo_inst.jsonl",
+   "size": 471390,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/realized_probe/realized_t_base.jsonl",
+   "size": 683969,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/realized_probe/realized_t_rlvr.jsonl",
+   "size": 485066,
+   "mtime": 1783638001
+  },
+  {
+   "path": "results/realized_probe/realized_z_base.jsonl",
+   "size": 597252,
+   "mtime": 1783638002
+  },
+  {
+   "path": "results/realized_probe/realized_z_dpo.jsonl",
+   "size": 978619,
+   "mtime": 1783638004
+  }
+ ]
+}

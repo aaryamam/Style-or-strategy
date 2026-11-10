@@ -1,0 +1,25 @@
+TASK 0 — seller-A constrained D_fam vs main-table constrained D_fam (full precision)
+method: study.dfam (point D is deterministic; identical methodology both sides)
+
+OLMo:
+  seller-A  D_fam = 0.8401585406838912   (runs/seller_exp/A_base vs A_instruct; via seller_analyze.py::test3 -> study.dfam)
+  main      D_fam = 0.7923492407181946   (runs/n500/constrained_base vs instruct; Table 3 source)
+  identical (point, full float)? False   abs diff = 0.047809299965696606
+Zephyr:
+  seller-A  D_fam = 0.4056221140314698   (runs/seller_exp/A_z_base vs A_z_dpo; via seller_analyze.py::test3 -> study.dfam)
+  main      D_fam = 0.3527084811133639   (runs/n500/constrained_z_base vs z_dpo; Table 3 source)
+  identical (point, full float)? False   abs diff = 0.05291363291810591
+Tulu:
+  seller-A  D_fam = 0.8006578759723876   (runs/seller_exp/A_t_base vs A_t_rlvr; via seller_analyze.py::test3 -> study.dfam)
+  main      D_fam = 0.8013268156995512   (runs/n500/constrained_t_base vs t_rlvr; Table 3 source)
+  identical (point, full float)? False   abs diff = 0.0006689397271636421
+
+Generation-identity check (are seller-A runs a copy of the main constrained runs?):
+  t_rlvr: round-1 raw identical in 488/500 episodes (DIFFERENT generations)
+  base: round-1 raw identical in 492/500 episodes (DIFFERENT generations)
+  z_dpo: round-1 raw identical in 487/500 episodes (DIFFERENT generations)
+
+stubborn-schedule seed derivation:
+  game_lib.stubborn_schedule: random.Random(seed ^ 0x5EED)
+  seller_exp.stub_schedule  : random.Random((seed ^ 0x5EED) + int(0.35*1000))  -> +350 offset
+  -> sample ep seed 123400000: game_lib= [True, True, False, False]  seller_exp= [False, True, True, True]

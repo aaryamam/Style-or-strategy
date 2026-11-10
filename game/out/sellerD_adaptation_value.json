@@ -1,0 +1,194 @@
+{
+  "step1_validation": {
+    "A": {
+      "alpha": 0.45,
+      "surplus": 11.714285714285714,
+      "target_alpha": 0.45,
+      "target_surplus": 11.7,
+      "status": "PASS"
+    },
+    "B": {
+      "alpha": 0.05,
+      "surplus": 22.179802955665025,
+      "target_alpha": 0.05,
+      "target_surplus": 22.2,
+      "status": "PASS"
+    },
+    "C": {
+      "alpha": 0.75,
+      "surplus": 2.4729064039408866,
+      "target_alpha": 0.75,
+      "target_surplus": 2.5,
+      "status": "PASS"
+    }
+  },
+  "horizons": {
+    "natural_T8": {
+      "a_hold_rate": {
+        "s_flat": 10.51231527093596,
+        "s_adapt": 10.51231527093596,
+        "delta_s": 0.0,
+        "delta_s_frac_flat": 0.0,
+        "delta_s_frac_room": 0.0,
+        "c_star": 0.0,
+        "c_star_sign": "zero",
+        "wa_flat": 0.12807881773399016,
+        "wa_adapt": 0.12807881773399016,
+        "params_flat": [
+          0.35,
+          0.08,
+          0.0
+        ],
+        "params_adapt": [
+          0.35,
+          0.08,
+          0.0
+        ]
+      },
+      "b_conc_granted": {
+        "s_flat": 10.51231527093596,
+        "s_adapt": 10.64039408866995,
+        "delta_s": 0.12807881773398933,
+        "delta_s_frac_flat": 0.012183692596063651,
+        "delta_s_frac_room": 0.005433079093093685,
+        "c_star": 0.07,
+        "c_star_sign": "pos",
+        "wa_flat": 0.12807881773399016,
+        "wa_adapt": 0.1354679802955665,
+        "params_flat": [
+          0.35,
+          0.08,
+          0.0
+        ],
+        "params_adapt": [
+          0.35,
+          0.05,
+          0.07
+        ]
+      },
+      "oracle": {
+        "s_oracle": 13.751231527093596,
+        "s_oracle_minus_s_flat": 3.2389162561576352,
+        "s_flat_best_for_oracle": 10.51231527093596
+      }
+    },
+    "forced_k4": {
+      "a_hold_rate": {
+        "s_flat": 10.201970443349754,
+        "s_adapt": 10.283251231527094,
+        "delta_s": 0.08128078817733986,
+        "delta_s_frac_flat": 0.007967165620473197,
+        "delta_s_frac_room": 0.0034479155783094743,
+        "c_star": 0.07,
+        "c_star_sign": "pos",
+        "wa_flat": 0.16502463054187191,
+        "wa_adapt": 0.16502463054187191,
+        "params_flat": [
+          0.3,
+          0.08,
+          0.0
+        ],
+        "params_adapt": [
+          0.3,
+          0.05,
+          0.07
+        ]
+      },
+      "b_conc_granted": {
+        "s_flat": 10.201970443349754,
+        "s_adapt": 10.38423645320197,
+        "delta_s": 0.1822660098522153,
+        "delta_s_frac_flat": 0.017865765330757944,
+        "delta_s_frac_room": 0.00773168947863331,
+        "c_star": 0.07,
+        "c_star_sign": "pos",
+        "wa_flat": 0.16502463054187191,
+        "wa_adapt": 0.1354679802955665,
+        "params_flat": [
+          0.3,
+          0.08,
+          0.0
+        ],
+        "params_adapt": [
+          0.35,
+          0.05,
+          0.07
+        ]
+      },
+      "oracle": {
+        "s_oracle": 14.519704433497537,
+        "s_oracle_minus_s_flat": 4.317733990147783,
+        "s_flat_best_for_oracle": 10.201970443349754
+      }
+    }
+  },
+  "meta": {
+    "grid_n": 500,
+    "feasible_n": 406,
+    "mean_eff_room": 23.573891625615765,
+    "alpha_grid": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "c_base_grid": [
+      0.0,
+      0.02,
+      0.05,
+      0.08,
+      0.1,
+      0.12,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.4,
+      0.5
+    ],
+    "c_adapt_grid": [
+      -2.0,
+      -1.5,
+      -1.0,
+      -0.7,
+      -0.5,
+      -0.3,
+      -0.15,
+      -0.07,
+      0.0,
+      0.07,
+      0.15,
+      0.3,
+      0.5,
+      0.7,
+      1.0,
+      1.5,
+      2.0
+    ],
+    "oracle_n_per_ep": 3000,
+    "oracle_rng_seed": 42,
+    "policy_form": "p_1 = floor + alpha_0*(v_b-floor); p_t = p_{t-1} + max(0, (c_base + c_adapt*h_t) * (v_b - p_{t-1})); offers are integers, monotonically non-decreasing, capped at v_b",
+    "h_a": "hold_rate = fraction of prior seller counters that were holds (Test-4 op-a)",
+    "h_b": "conc_granted = (ask_0 - ask_t)/(ask_0 - floor) cumulative seller concession (Test-4 op-b)",
+    "flat_def": "c_adapt fixed at 0",
+    "delta_s_note": "Restricted parametric form: LOWER BOUND on Test-4 observable-channel value of adaptation",
+    "oracle_note": "Per-episode random search n=3000; buyer has oracle knowledge of episode params + D rule + stub_schedule. Mean of per-episode optima = UPPER BOUND on any agent's mean surplus."
+  }
+}

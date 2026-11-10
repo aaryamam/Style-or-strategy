@@ -1,0 +1,27 @@
+% T12 accept-timing surplus value vs seller D (k=4; fitted-rule delta)
+% D accept-timing best-response gain over blind: op-a 0.0000, op-b 0.0025 pts (both null).
+\begin{tabular}{ll rr r}
+\toprule
+checkpoint & op & \multicolumn{1}{c}{$\Delta S$ (pts)} & \multicolumn{1}{c}{CI-endpoint range} & alignment \\
+\midrule
+OLMo base & a & 0.000 & [1.362, -0.002] & null\_gradient \\
+OLMo base & b & 0.000 & [0.970, -0.059] & null\_gradient \\
+\addlinespace
+OLMo instruct & a & 0.111 & [0.251, -0.025] & null\_gradient \\
+OLMo instruct & b & -0.310 & [-0.212, -0.310] & null\_gradient \\
+\addlinespace
+Mistral base & a & 0.076 & [0.911, -1.017] & null\_gradient \\
+Mistral base & b & -0.483 & [1.660, -1.828] & null\_gradient \\
+\addlinespace
+Zephyr DPO & a & 0.172 & [0.249, 0.096] & null\_gradient \\
+Zephyr DPO & b & -0.342 & [-0.241, -0.431] & null\_gradient \\
+\addlinespace
+Llama base & a & 0.000 & [0.010, -0.320] & null\_gradient \\
+Llama base & b & 0.062 & [0.062, -0.581] & null\_gradient \\
+\addlinespace
+Tulu RLVR & a & 0.195 & [0.584, 0.017] & null\_gradient \\
+Tulu RLVR & b & -2.025 & [-0.877, -2.451] & null\_gradient \\
+\addlinespace
+\bottomrule
+\end{tabular}
+% Verdict: accept-timing gradient NULL vs D (0.00 pt best-response value) -> direction indeterminate; fitted sensitivity surplus-inert (op-a $\le$+0.19 pt) to mildly maladaptive (op-b).

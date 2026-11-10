@@ -1,0 +1,15 @@
+% T5 strict-regime stage attribution (N=500)
+\begin{tabular}{llrr}
+\toprule
+family & step & \multicolumn{1}{c}{$D_{\text{fam}}$ (strict)} & \multicolumn{1}{c}{95\% CI} \\
+\midrule
+OLMo & base$\to$sft & 1.118 & [0.988, 1.284] \\
+OLMo & sft$\to$dpo & 0.710 & [0.614, 0.840] \\
+OLMo & dpo$\to$instruct & 0.093 & [0.056, 0.161] \\
+\midrule
+Zephyr & z\_base$\to$z\_sft & 0.433 & [0.325, 0.584] \\
+Zephyr & z\_sft$\to$z\_dpo & 0.569 & [0.472, 0.698] \\
+\midrule
+Tulu & t\_base$\to$t\_rlvr & 1.141 & [1.037, 1.260] \\
+\bottomrule
+\end{tabular}
